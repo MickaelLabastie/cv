@@ -217,6 +217,10 @@ article{
     border: 2px solid purple;
 }
 
+.none{
+    display: none;
+}
+
 
 /************************************ FOOTER ************************************/
 #copyrightZone{
