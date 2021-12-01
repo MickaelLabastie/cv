@@ -291,6 +291,12 @@ article{
     font-style: italic;
 }
 
+
+/********** ARTICLE #training **********/
+#training{
+    background-color: #1B4F72;
+}
+
 /************************************ FOOTER ************************************/
 #copyrightZone{
     width: auto;
