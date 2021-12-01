@@ -13,7 +13,7 @@ body{
 }
 
 h1, h2{
-    font-family: 'Air America', Verdana , Times, sans-serif;
+    font-family: 'Air america', Verdana , Times, sans-serif;
 }
 
 .border{
@@ -29,7 +29,7 @@ header{
     left: 0;
     right: 0;
     color: white;
-    background-image: linear-gradient(045deg, rgba(0,0,0,100) 0%, rgba(71,71,75,100) 50%, rgba(108,108,108,100) 100%);
+    background-image: linear-gradient(45deg, rgba(0,0,0,100) 0%, rgba(71,71,75,100) 50%, rgba(108,108,108,100) 100%);
     text-align: center;
 }
 
@@ -214,17 +214,22 @@ article{
     display: none;
 }
 
+#pro{
+    background-image: linear-gradient(45deg, #3498DB, #FFF);
+}
+
 .timeline{
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 85%;
+    width: 75%;
     height: 90vh;
     margin: 0 auto;
     padding: 10px;
-    background-color: #1B4F72;
+    border-radius: 10px;
+    background-color: rgba(0,0,0,0.7);
 }
 
 .timeline::before{
@@ -232,7 +237,7 @@ article{
     position: absolute;
     width: 3px;
     height: 100%;
-    background-color: #000;
+    background-color: #FFF;
 }
 
 .timeline-item{
@@ -241,19 +246,29 @@ article{
     border-top: 1px solid #FFF;
     border-left: 1px solid #FFF;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px 2px;
+    box-shadow: 5px 5px 3px white;
     margin:0 10%;
+    color: white;
 }
 
-.timeline-item{
+.timeline-item:hover{
+    cursor: pointer;
+    color:  #2ECC71;
+    box-shadow: 5px 5px 3px  #2ECC71;
+    border-top-color:  #2ECC71;
+    border-left-color:  #2ECC71;
+}
 
+.timeline-item:hover::before{
+    background-color: #FFA500;
+    box-shadow: 0 0 5px #FFA500;
 }
 
 .timeline-item::before{
     content: '';
     position: absolute;
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     background-color: #FFF;
     left: 50%;
