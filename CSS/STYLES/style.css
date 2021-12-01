@@ -215,7 +215,7 @@ article{
 }
 
 #pro{
-    background-image: linear-gradient(45deg, #3498DB, #FFF);
+    background-image: linear-gradient(325deg, #3498DB, #FFF);
 }
 
 .timeline{
@@ -254,9 +254,9 @@ article{
 .timeline-item:hover{
     cursor: pointer;
     color:  #2ECC71;
-    box-shadow: 5px 5px 3px  #2ECC71;
-    border-top-color:  #2ECC71;
-    border-left-color:  #2ECC71;
+    box-shadow: 5px 5px 3px  #FFA500;
+    border-top-color:  #FFA500;
+    border-left-color:  #FFA500;
 }
 
 .timeline-item:hover::before{
