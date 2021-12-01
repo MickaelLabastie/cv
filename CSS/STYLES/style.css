@@ -230,21 +230,23 @@ article{
 .timeline::before{
     content: '';
     position: absolute;
-    width: 5px;
-    height: 90%;
-    background-color: #FFF;
+    width: 3px;
+    height: 100%;
+    background-color: #000;
 }
 
 .timeline-item{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     width: 30%;
     padding: 2px;
-    border: 2px solid #FFF;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
     border-radius: 10px;
+    box-shadow: 5px 5px 5px 2px;
+    margin:0 10%;
+}
+
+.timeline-item{
+
 }
 
 .timeline-item::before{
@@ -254,17 +256,16 @@ article{
     height: 20px;
     border-radius: 50%;
     background-color: #FFF;
-    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .timeline-item:nth-child(odd){
     align-self: flex-start;
-    margin-left: 150px;
 }
 
 .timeline-item:nth-child(even){
     align-self: flex-end;
-    margin-right: 150px;
 }
 
 .timeline-item ul li{
@@ -273,16 +274,6 @@ article{
 
 .timeline-item ul li:nth-child(1){
     font-style: italic;
-}
-
-.timeline-item:nth-child(odd)::before{
-    right: 0;
-    transform: translate(50%,-50%);
-}
-
-.timeline-item:nth-child(even)::before{
-    left: 0;
-    transform: translate(-50%,-50%);
 }
 
 /************************************ FOOTER ************************************/
