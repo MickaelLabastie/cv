@@ -243,10 +243,9 @@ article{
 .timeline-item{
     width: 30%;
     padding: 2px;
-    border-top: 1px solid #FFF;
-    border-left: 1px solid #FFF;
+    border: 1px solid #FFF;
     border-radius: 10px;
-    box-shadow: 5px 5px 3px white;
+    box-shadow: 0 0 3px white;
     margin:0 10%;
     color: white;
 }
@@ -254,14 +253,15 @@ article{
 .timeline-item:hover{
     cursor: pointer;
     color:  #2ECC71;
-    box-shadow: 5px 5px 3px  #FFA500;
-    border-top-color:  #FFA500;
-    border-left-color:  #FFA500;
+    box-shadow: 0 0 5px  #FFA500;
+    border-color:  #FFA500;
+    transition: 0.3s linear;
 } 
 
 .timeline-item:hover::before{
     background-color: #FFA500;
     box-shadow: 0 0 5px #FFA500;
+    transition: 0.3s linear;
 }
 
 .timeline-item::before{
@@ -310,6 +310,10 @@ article{
 
 .invisible{
     display: none;
+}
+
+.visible{
+    display: block;
 }
 
 .border{
