@@ -1,6 +1,6 @@
 var timelineItems = document.querySelectorAll('.timeline-item');
 
-var appear = function(){
+var details = function(){
         var selector = this.id+'Details';
         var targetElement = document.getElementById(selector);
         targetElement.classList = 'details';
@@ -10,6 +10,6 @@ var appear = function(){
 }
 
 for(let index = 0;index < timelineItems.length;index++){
-    const timelineItem = timelineItems[index];
-    timelineItem.addEventListener('click', appear);
+    var timelineItem = timelineItems[index];
+    timelineItem.addEventListener('click', details);
 }
