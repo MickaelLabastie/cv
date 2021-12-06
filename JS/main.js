@@ -2,5 +2,4 @@
 
 window.onload = ()=>{
     boxST01.addEventListener('click', activateDoors);
-    laValette.addEventListener('click', changeBgd);
 }
