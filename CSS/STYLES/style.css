@@ -345,7 +345,7 @@ article {
   border-radius: 10px;
   visibility: visible;
   opacity: 1;
-  transition: opacity 1s linear;
+  transition: opacity 0.6s linear;
 }
 
 .openBtn,
