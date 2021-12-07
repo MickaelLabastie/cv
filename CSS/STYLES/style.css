@@ -13,10 +13,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.scrollTop {
-  scroll-margin-top: 98px;
-}
-
 body {
   font-family: "Quicksand", Verdana, Times, sans-serif;
   padding-top: 98px;
@@ -27,9 +23,10 @@ h2 {
   font-family: "Air america", Verdana, Times, sans-serif;
 }
 
-.border {
-  border: 2px solid red;
+.scrollTop {
+  scroll-margin-top: 98px;
 }
+
 
 /************************************ HEADER ************************************/
 header {
@@ -44,6 +41,7 @@ header {
   text-align: center;
 }
 
+
 /********** H1, H2 **********/
 #mainTitle {
   font-size: 2.5em;
@@ -56,6 +54,7 @@ header {
 .shadow {
   text-shadow: 4px 4px black;
 }
+
 
 /********** NAV **********/
 #navigation {
@@ -94,11 +93,13 @@ header {
   top: 3px;
 }
 
+
 /************************************ MAIN ************************************/
 article {
   height: 100vh;
   width: 100%;
 }
+
 
 /********** ARTICLE #profile **********/
 #profile {
@@ -247,6 +248,7 @@ article {
   color: white;
 }
 
+
 /********** ARTICLE #pro **********/
 #pro {
   background-image: linear-gradient(325deg, #3498db, #fff);
@@ -287,6 +289,7 @@ article {
 
 .timeline-item:hover {
   color: #2ecc71;
+  text-shadow: 0 0 1px #0F0;
   box-shadow: 0 0 5px #ffa500;
   border-color: #ffa500;
   transition: 0.5s linear;
@@ -340,8 +343,12 @@ article {
   width: 60%;
   height: 70%;
   top: 20%;
-  background-color: #fff;
-  color: #000;
+  background-color: rgba(0,0,0,0.8);
+  box-shadow: 0 0 5px #ffa500;
+  backdrop-filter: blur(3px);
+  color: #2ecc71;
+  text-shadow: 0 0 1px #0F0;
+  border: 1px solid #FFA500;
   border-radius: 10px;
   visibility: visible;
   opacity: 1;
@@ -402,10 +409,12 @@ article {
   }
 }
 
+
 /********** ARTICLE #training **********/
 #training {
   background-color: #1b4f72;
 }
+
 
 /************************************ FOOTER ************************************/
 #copyrightZone {
