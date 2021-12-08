@@ -442,7 +442,42 @@ article {
 
 /********** ARTICLE #training **********/
 #training {
-  background-color: #1b4f72;
+  background-color: #002b87;
+}
+
+.training {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  height: 75vh;
+  margin: 10vh auto 0;
+  border: 2px solid red;
+}
+
+.training li:nth-child(odd) {
+  align-self: flex-start;
+}
+
+.training li:nth-child(even) {
+  align-self: flex-end;
+}
+.training-item {
+  list-style-type: none;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  overflow: hidden;
+  font-size: 2em;
+  transition: width 1s linear;
+}
+
+.training-item:hover {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 /************************************ FOOTER ************************************/
