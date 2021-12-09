@@ -1,7 +1,10 @@
+/*JS functions file for timeline animations (CV Project)*/
+
 var open_buttons = document.querySelectorAll('.openBtn');
 var close_buttons = document.querySelectorAll('.closeBtn');
 var timeline = document.getElementById('timeline');
 var button;
+
 
 var openDetails = function(){
     var selector = this.parentElement.id+'Details';

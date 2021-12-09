@@ -1,4 +1,4 @@
-/*JS functions file for hangar animation(CV Project)*/
+/*JS functions file for hangar animations (CV Project)*/
 
 var boxST01 = document.getElementById('boxST01');
 var door01 = document.getElementById('door01');
@@ -10,7 +10,7 @@ var door06 = document.getElementById('door06');
 var interrupter = false;
 
 /*
-Those two functions animate the subTitle01 block during opening and closing doors.
+These two functions animate the subTitle01 block during opening and closing doors.
 pannelUp(): animates the pannel to the top.
 pannelDown(): animates the pannel to the point of origin (middle).
 The transition property whom apply to transform property is necessary to correct the pannel position during animation.
@@ -20,12 +20,24 @@ var pannelUp = ()=>{
     boxST01.style.top = '0';
     boxST01.style.transform = 'translate(-50%,0)';
     boxST01.style.transition = 'top 6s ease-in-out, transform 6s ease-in-out';
+    boxST01.style.pointerEvents = 'none';
+    setTimeout(startClick, 6000);
 }
 
 var pannelDown = ()=>{
     boxST01.style.top = '50%';
     boxST01.style.transform = 'translate(-50%,-50%)';
-    // boxST01.style.transition = 'top 6s ease-in-out, transform 6s linear ease-in-out';
+    boxST01.style.pointerEvents = 'none';
+    setTimeout(startClick, 6000);
+}
+
+/*
+This function makes the click event possible on the subTitle01 block.
+Thanks to setTimeout() in pannelUp(), pannelDown() functions above and the instruction boxST01.style.pointerEvents = 'none'
+the click event is temporarily deactivated for 6s (the animation delay).
+*/
+var startClick = ()=>{
+    boxST01.style.pointerEvents = 'auto';
 }
 
 /* 

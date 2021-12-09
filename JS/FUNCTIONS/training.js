@@ -1,5 +1,5 @@
 var controller = new ScrollMagic.Controller();
-var trainingTween = new TweenMax.to('.training-item', 1, {
+var trainingTween = new TweenMax.to('#trngItem01', 0.1, {
     width: '50%',
     border: '2px solid #FFF',
     borderRadius: '10px',
