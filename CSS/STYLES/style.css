@@ -470,7 +470,15 @@ article {
   border-radius: 50%;
   border: 2px solid white;
   overflow: hidden;
-  transition: width 1s linear;
+  transition: 0.6s linear;
+}
+
+.change {
+  width: 50%;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #000;
 }
 
 /************************************ FOOTER ************************************/
