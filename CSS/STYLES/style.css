@@ -277,7 +277,7 @@ article {
 
 .timeline-item {
   width: 30%;
-  padding: 5px;
+  padding: 10px;
   border: 1px solid #fff;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -341,6 +341,7 @@ article {
   width: 60%;
   height: 60%;
   top: 20%;
+  padding: 10px;
   overflow-y: auto;
   overflow-x: hidden;
   background-color: rgba(0, 0, 0, 0.8);
@@ -416,7 +417,7 @@ article {
 
 .timeline-item:nth-child(odd) .openBtn {
   left: calc(40% - 10px);
-  transform: translate(-70%, -110%);
+  transform: translate(-75%, -75%);
 }
 
 .timeline-item:nth-child(even) .openBtn {
@@ -455,13 +456,13 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 90%;
+  width: 85%;
   height: 85vh;
   margin: 5vh auto 0;
   border-radius: 10px;
   box-shadow: 0 0 5px #000;
-  background: url("../../ASSETS/Pictures/literature.jpg") no-repeat center /
-    contain;
+  background: url("../../ASSETS/Pictures/literature.jpg") no-repeat center / contain;
+  background-color: #3498db;
   background-attachment: fixed;
 }
 
@@ -475,31 +476,53 @@ article {
 
 .training-item {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-  margin: 5px;
+  position: relative;
+  top: 50px;
+  width: 40%;
+  height: 50px;
+  margin: 0 5px;
+  border: 2px solid #000;
+  border-radius: 5px;
   list-style-type: none;
-  border: 2px solid white;
-  background-color: #1b4f72;
-  color: #fff;
+  background-color: #fff;
+  color: #1b4f72;
   font-weight: bold;
-  transition: 0.6s linear;
+  box-shadow: 0 5px 5px#000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.8s linear;
+}
+
+.training-item::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: url('../../ASSETS/Icons/hat_school.png') no-repeat center / cover;
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 5px;
+  box-shadow: 0 5px 5px#000;
+}
+
+.training-item:nth-child(odd)::after{
+  right: 0;
+  transform: translate(80%,-80%);
+}
+
+.training-item:nth-child(even)::after{
+  left: 0;
+  transform: translate(-80%,-80%);
 }
 
 .change {
-  width: 40%;
-  border-radius: 10px;
-  font-size: 2.5em;
-  background-color: #fff;
-  color: #2ecc71;
-  text-shadow: 0 0 1px #0f0;
-}
-
-.none {
-  display: none;
+  top: -10px;
+  opacity: 1;
+  visibility: visible;
 }
 
 /************************************ FOOTER ************************************/
