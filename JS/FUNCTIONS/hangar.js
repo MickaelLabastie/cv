@@ -154,8 +154,8 @@ This function makes all the animation coming true.
 It calls the different functions in a certain order with a delay time given by the setTimeout function.
 It has two parts in an if/else statement.Each part is activated thanks to the boolean value of interrupter variable.
 */
-var activateDoors = (event)=>{
-    if(interrupter == false){
+var activateDoors = ()=>{
+    if(interrupter === false){
         pannelUp();
         openDoors01();
         setTimeout(openDoors02, 2000);
