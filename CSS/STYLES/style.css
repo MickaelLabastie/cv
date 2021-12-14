@@ -526,6 +526,11 @@ article {
   visibility: visible;
 }
 
+/********** ARTICLE #skills **********/
+#skills {
+  background-color: #1b4f72;
+}
+
 /************************************ FOOTER ************************************/
 #copyrightZone {
   width: auto;
