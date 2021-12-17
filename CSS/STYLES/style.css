@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: "Quicksand", Verdana, Times, sans-serif;
+  font-family: 'Quicksand', Verdana, Times, sans-serif;
   padding-top: 98px;
 }
 
@@ -104,6 +104,7 @@ article {
 #profile {
   position: relative;
   height: auto;
+  overflow-x: hidden;
 }
 
 #boxST01 {
@@ -702,7 +703,7 @@ i {
 .progressBar {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   width: 80%;
   height: 50%;
@@ -712,12 +713,14 @@ i {
 
 .counter {
   position: absolute;
-  font-size: 0.5em;
-  color: #2ecc71;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6em;
+  color: #002b87;
+  text-shadow: 0 0 2px #000;
 }
 
 .inProgress {
-  width: 0;
   height: 100%;
   background-image: repeating-linear-gradient(
     45deg,

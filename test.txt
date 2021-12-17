@@ -1,0 +1,72 @@
+var progressBar = document.getElementsByClassName('progressBar')
+for(let i = 0; i < 2;i++){
+  switch(i){
+    case 0 :
+      progressBar[0].childNodes[1].textContent = '10%';
+      progressBar[0].childNodes[3].style.width = '10%';
+      break;
+    case 1 :
+      progressBar[1].childNodes[1].textContent = '50%';
+      progressBar[1].childNodes[3].style.width = '50%';
+    case 2 :
+      progressBar[2].childNodes[1]
+      progressBar[2].childNodes[3].style.width = '70%';
+      break;
+    default: 
+      console;log('It\'s over');
+      break;
+  }
+}
+
+const skillsContainer01 = document.getElementById('skillsContainer01');
+var progressBars = document.getElementsByClassName('progressBar');
+var count = 0;
+
+const valHtml = 50+'%';
+const valCss = 50+'%';
+const valJs = 50+'%';
+const valSass = 50+'%';
+const valBootstrap = 10+'%';
+const valVuejs = 0+'%';
+const valReact = 0+'%';
+const valVscode = 50+'%';
+const valGithub = 50+'%';
+const valFigma = 50+'%';
+const valPhp = 0+'%';
+const valMysql = 0+'%';
+const valSymfony = 0+'%';
+const valLaravel = 0+'%';
+
+var progress = () => {
+  
+	for(let i = 0; i < progressBars.length;i++){
+  
+  	var value = progressBars[i].childNodes[1];
+  	var size = progressBars[i].childNodes[3].style;
+  
+  	switch(i){
+      
+    	case 0 :
+      	while(count <= valHtml){
+        	let counter = setInterval(count++, 200);
+       		value.textContent = counter;
+      		size.width = counter;
+        	console.log(counter);
+      	}
+     
+      break;
+      
+    case 1 :
+      progressBars[1].childNodes[1].textContent = '50%';
+      progressBars[1].childNodes[3].style.width = '50%';
+      break;
+  }
+}
+
+}
+
+var reinit = () => {
+  
+}
+
+skillsContainer01.addEventListener('mouseover', () => setTimeout(progress, 1000));
