@@ -37,6 +37,10 @@ const valMysql = 0+'%';
 const valSymfony = 0+'%';
 const valLaravel = 0+'%';
 
+var counter = () => {
+  count++;
+}
+
 var progress = () => {
   
 	for(let i = 0; i < progressBars.length;i++){
@@ -46,20 +50,14 @@ var progress = () => {
   
   	switch(i){
       
-    	case 0 :
-      	while(count <= valHtml){
-        	let counter = setInterval(count++, 200);
-       		value.textContent = counter;
-      		size.width = counter;
-        	console.log(counter);
-      	}
-     
-      break;
-      
-    case 1 :
-      progressBars[1].childNodes[1].textContent = '50%';
-      progressBars[1].childNodes[3].style.width = '50%';
-      break;
+    case 0 :
+    	while(count <= valHtml){
+        
+     		value.textContent = counter;
+    		size.width = counter;
+      	console.log(counter);
+    	}
+    break;
   }
 }
 

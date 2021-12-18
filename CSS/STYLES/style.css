@@ -1,6 +1,6 @@
 /*CSS general styles file(CV Project)*/
 
-/************************************ CSS GENERAL STYLE ************************************/
+/************************************| GENERAL STYLE |************************************/
 *,
 ::before,
 ::after {
@@ -20,7 +20,7 @@ body {
 
 h1,
 h2 {
-  font-family: "Air america", Verdana, Times, sans-serif;
+  font-family: 'Air america', Verdana, Times, sans-serif;
 }
 
 .scrollTop {
@@ -31,7 +31,7 @@ h2 {
   padding: 5px;
 }
 
-/************************************ HEADER ************************************/
+/************************************| HEADER |************************************/
 header {
   position: fixed;
   z-index: 1000;
@@ -44,7 +44,7 @@ header {
   text-align: center;
 }
 
-/********** H1, H2 **********/
+/*******************| HEADER H1,H2 |*******************/
 #mainTitle {
   font-size: 2.5em;
 }
@@ -57,7 +57,7 @@ header {
   text-shadow: 4px 4px black;
 }
 
-/********** NAV **********/
+/*******************| HEADER NAV |*******************/
 #navigation {
   font-size: 0.8em;
   padding: 5px 10px;
@@ -94,13 +94,13 @@ header {
   top: 3px;
 }
 
-/************************************ MAIN ************************************/
+/************************************| MAIN |************************************/
 article {
   height: 100vh;
   width: 100%;
 }
 
-/********** ARTICLE #profile **********/
+/*******************| ARTICLE #profile |*******************/
 #profile {
   position: relative;
   height: auto;
@@ -249,7 +249,7 @@ article {
   color: white;
 }
 
-/********** ARTICLE #pro **********/
+/*******************| ARTICLE #pro |*******************/
 #pro {
   background-image: linear-gradient(325deg, #3498db, #fff);
 }
@@ -447,7 +447,7 @@ article {
   }
 }
 
-/********** ARTICLE #training **********/
+/*******************| ARTICLE #training |*******************/
 #training {
   background-color: #fff;
 }
@@ -531,7 +531,7 @@ article {
   visibility: visible;
 }
 
-/********** ARTICLE #skills **********/
+/*******************| ARTICLE #skills |*******************/
 #skills {
   color: #fff;
   background: url("../../ASSETS/Pictures/dev_web.webp") no-repeat center/ cover;
@@ -561,7 +561,7 @@ article {
   height: 100%;
   transform-style: preserve-3d;
   cursor: pointer;
-  transition: all 0.6s linear;
+  transition: all 0.4s linear;
 }
 
 .skillsFront,
@@ -715,24 +715,25 @@ i {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 0.6em;
-  color: #002b87;
-  text-shadow: 0 0 2px #000;
+  font-size: 0.7em;
+  color: #000;
+  font-weight: bold;
+  text-shadow: 0 0 1px #3498db;
 }
 
 .inProgress {
   height: 100%;
   background-image: repeating-linear-gradient(
     45deg,
-    #1b4f72 0,
+    #fff 0,
+    #fff 10px,
     #1b4f72 10px,
-    #3498db 10px,
-    #3498db 20px
+    #1b4f72 20px
   );
   border-radius: 10px;
 }
 
-/************************************ FOOTER ************************************/
+/************************************| FOOTER |************************************/
 #copyrightZone {
   width: auto;
   height: 2em;
