@@ -1,5 +1,5 @@
-var progressBars = document.getElementsByClassName('progressBar');
 var skillsCards = document.getElementsByClassName('skillsCard');
+var progressBars = document.getElementsByClassName('progressBar');
 
 /*
 The object valSkills contains all the different values for each skill progress bar.
@@ -30,6 +30,8 @@ The progress() function simultaneously modifies the values of:
 -Width style property for each div element, to display loading bar effect
 Thanks to setInterval() function those values change each 50ms.
 We can see the progressive modifications as an animation.
+When the count variable value is equal to the value defines in valSkills object (in parameter of the function)
+we end up with clearnIterval()
 */
 var progress = (index,valSkill) => {
 
@@ -43,10 +45,13 @@ var progress = (index,valSkill) => {
         }
         count++;
 
-    }, 50);
+    }, 15);
 
 }
 
+/*
+The launchProgress() function start progress bar efffect thnaks to progress() function
+*/
 var launchProgress = () => {
     for(let i = 0; i < progressBars.length;i++){
         progress(i,Object.values(valSkills)[i]);
@@ -63,7 +68,8 @@ for (let i = 0; i < skillsCards.length; i++) {
 
     const element = skillsCards[i];
     element.addEventListener('mouseenter', () => {
-        setTimeout(launchProgress, 1000);
+        setTimeout(launchProgress, 600);
     });
     element.addEventListener('mouseleave', reinitProgress);
+
 }
