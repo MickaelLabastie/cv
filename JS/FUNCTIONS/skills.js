@@ -26,12 +26,12 @@ var valSkills = {
 
 /*
 The progress() function simultaneously modifies the values of:
--Text content in each span element, to display the percentage
--Width style property for each div element, to display loading bar effect
+-Text content in each span.counter element, to display the percentage
+-Width style property for each div. element, to display loading bar effect
 Thanks to setInterval() function those values change each 50ms.
 We can see the progressive modifications as an animation.
-When the count variable value is equal to the value defines in valSkills object (in parameter of the function)
-we end up with clearnIterval()
+When the count variable value is equal to the value defines in valSkills object (second parameter of the function)
+we make the function ends with clearInterval()
 */
 var progress = (index,valSkill) => {
 
@@ -50,7 +50,7 @@ var progress = (index,valSkill) => {
 }
 
 /*
-The launchProgress() function start progress bar efffect thnaks to progress() function
+The launchProgress() function start progress bar efffect thanks to progress() function
 */
 var launchProgress = () => {
     for(let i = 0; i < progressBars.length;i++){
@@ -58,12 +58,18 @@ var launchProgress = () => {
     } 
 }
 
+/*
+The reinitProgress() function reinitialise each progress bar
+*/
 var reinitProgress = () => {
     for(let i = 0; i < progressBars.length;i++){
         progress(i,0);
     } 
 }
 
+/*
+We give to each skillsContainer an event listener on each mouse events (mouseenter and mouseout)
+*/
 for (let i = 0; i < skillsCards.length; i++) {
 
     const element = skillsCards[i];
