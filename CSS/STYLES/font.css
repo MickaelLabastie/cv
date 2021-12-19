@@ -1,12 +1,7 @@
-/*CSS file for special font parameters*/
+/*CSS file for special font*/
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 @font-face {
     font-family: 'Air America';
     src: url('../../ASSETS/Fonts/AirAmerica/AirAmerica-Regular.otf');
-}
-
-@font-face {
-    font-family: 'Airstrike';
-    src: url('../../ASSETS/Fonts/Airstrike/airstrikecond.ttf');
 }

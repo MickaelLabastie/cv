@@ -1,3 +1,5 @@
+/*JS functions file for skillsCard animations (CV Project)*/
+
 var skillsCards = document.getElementsByClassName('skillsCard');
 var progressBars = document.getElementsByClassName('progressBar');
 
@@ -45,7 +47,7 @@ var progress = (index,valSkill) => {
         }
         count++;
 
-    }, 15);
+    }, 5);
 
 }
 

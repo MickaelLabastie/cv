@@ -1,9 +1,9 @@
-/*CSS general styles file(CV Project)*/
+/*CSS general styles file (CV Project)*/
 
 /************************************| GENERAL STYLE |************************************/
 *,
-::before,
-::after {
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -103,8 +103,8 @@ article {
 /*******************| ARTICLE #profile |*******************/
 #profile {
   position: relative;
-  height: auto;
   overflow-x: hidden;
+  height: auto;
 }
 
 #boxST01 {
@@ -531,6 +531,11 @@ article {
   visibility: visible;
 }
 
+.thanks{
+  text-align: center;
+  font-size: 0.8em;
+}
+
 /*******************| ARTICLE #skills |*******************/
 #skills {
   color: #fff;
@@ -734,12 +739,66 @@ i {
 }
 
 /************************************| FOOTER |************************************/
-#copyrightZone {
-  width: auto;
-  height: 2em;
-  color: white;
-  text-align: left;
-  padding: 0 0 0 10px;
-  background-color: rgba(71, 71, 75, 100);
-  align-self: center;
+#contacts{
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: repeat(4,1fr);
+  grid-template-areas: 
+    'contactTitle contactTitle'
+    'contactZone cvZone'
+    'contactZone cvZone'
+    'copyrightZone copyrightZone';
 }
+
+#contactTitle{
+  grid-area: contactTitle;
+  height: 50px;
+}
+
+#contactZone{
+  grid-area: contactZone;
+}
+
+#cvZone{
+  grid-area: cvZone;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1b4f72;
+  padding: 10px;
+}
+
+#cvZone h2, #cvZone a, #cvZone div{
+  padding: 10px;
+}
+
+.bxs-download{
+  font-size: 10em;
+}
+
+#copyrightZone {
+  grid-area: copyrightZone;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #484747;
+  color: #fff;
+}
+
+#copyrightZone ul{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  list-style-type: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+#copyrightZone ul li a{
+  padding: 0 10px;
+  text-decoration: none;
+  color: #fff;
+}
+

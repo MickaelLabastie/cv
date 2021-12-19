@@ -1,5 +1,11 @@
+/*JS functions file for scrolling animation (CV Project)*/
+
+/*Scrolling animation on ARTICLE#training element thanks to ScrolingMagic js library*/
+
+/*Declaration of a controller to use scroll magic scene and associated properties and methods */
 var controller = new ScrollMagic.Controller();
 
+/*Scene method to define parameters for scrolling animation*/
 var trainingScene = new ScrollMagic.Scene({
     triggerElement:'#training',
     triggerHook: 0.18,
@@ -16,7 +22,6 @@ var trainingScene = new ScrollMagic.Scene({
 //         triggerElement:'#trngItem0'+index,
 //     })
 //     .setClassToggle('#trngItem0'+index, 'change')
-//     // Add some indicators to visualize beginning and end of animation
 //     .addIndicators()
 //     .addTo(controller);
 
