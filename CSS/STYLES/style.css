@@ -14,13 +14,13 @@ html {
 }
 
 body {
-  font-family: 'Quicksand', Verdana, Times, sans-serif;
+  font-family: "Quicksand", Verdana, Times, sans-serif;
   padding-top: 98px;
 }
 
 h1,
 h2 {
-  font-family: 'Air america', Verdana, Times, sans-serif;
+  font-family: "Air america", Verdana, Times, sans-serif;
 }
 
 .scrollTop {
@@ -117,9 +117,9 @@ article {
   background-image: repeating-linear-gradient(
     45deg,
     black 0,
-    black 2px,
-    yellow 2px,
-    yellow 4px
+    black 3px,
+    yellow 3px,
+    yellow 6px
   );
   border-radius: 5px;
 }
@@ -129,7 +129,7 @@ article {
 }
 
 #subTitle01 {
-  padding: 2px;
+  padding: 3px;
   background-color: white;
 }
 
@@ -204,7 +204,7 @@ article {
 .img {
   width: 180px;
   height: 180px;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 50%;
 }
 
@@ -433,7 +433,7 @@ article {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-top-color: #3498db;
   animation: load 1s linear infinite;
 }
@@ -457,7 +457,7 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 85%;
+  width: 90%;
   height: 85vh;
   margin: 5vh auto 0;
   border-radius: 10px;
@@ -486,7 +486,7 @@ article {
   width: 40%;
   height: 50px;
   margin: 0 5px;
-  border: 2px solid #000;
+  border: 3px solid #000;
   border-radius: 5px;
   list-style-type: none;
   background-color: #fff;
@@ -506,7 +506,7 @@ article {
   height: 50px;
   background: url("../../ASSETS/Icons/hat_school.png") no-repeat center / cover;
   background-color: #fff;
-  border: 2px solid #000;
+  border: 3px solid #000;
   border-radius: 5px;
   box-shadow: 0 5px 5px#000;
 }
@@ -531,7 +531,7 @@ article {
   visibility: visible;
 }
 
-.thanks{
+.thanks {
   text-align: center;
   font-size: 0.8em;
 }
@@ -540,6 +540,7 @@ article {
 #skills {
   color: #fff;
   background: url("../../ASSETS/Pictures/dev_web.webp") no-repeat center/ cover;
+  background-attachment: fixed;
 }
 
 .skillsList {
@@ -576,7 +577,7 @@ article {
   height: 100%;
   backface-visibility: hidden;
   transform-style: preserve-3d;
-  border: 2px solid #fff;
+  border: 3px solid #fff;
   border-radius: 20px;
   background-image: linear-gradient(45deg, #3498db, #fff);
   box-shadow: 0 0 5px #fff;
@@ -614,7 +615,7 @@ article {
 }
 
 .skillsContent h1 {
-  text-shadow: 0 2px 10px #3498db;
+  text-shadow: 0 3px 10px #3498db;
 }
 
 .front {
@@ -669,7 +670,7 @@ article {
 }
 
 i {
-  text-shadow: 0 0 2px #000;
+  text-shadow: 0 0 3px #000;
   font-size: 1.2em;
 }
 
@@ -712,7 +713,7 @@ i {
   align-items: center;
   width: 80%;
   height: 50%;
-  border: 2px solid #1b4f72;
+  border: 3px solid #1b4f72;
   border-radius: 20px;
 }
 
@@ -739,28 +740,140 @@ i {
 }
 
 /************************************| FOOTER |************************************/
-#contacts{
+#contacts {
   height: auto;
   display: grid;
-  grid-template-columns: repeat(2,1fr);
-  grid-template-rows: repeat(4,1fr);
-  grid-template-areas: 
-    'contactTitle contactTitle'
-    'contactZone cvZone'
-    'contactZone cvZone'
-    'copyrightZone copyrightZone';
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr repeat(3, 2fr);
+  grid-template-areas:
+    "contactTitle contactTitle"
+    "contactZone cvZone"
+    "contactZone cvZone"
+    "copyrightZone copyrightZone";
+  background-color: #484747;
+  color: #fff;
 }
 
-#contactTitle{
+#contactTitle {
   grid-area: contactTitle;
-  height: 50px;
 }
 
-#contactZone{
+#contactZone {
+  position: relative;
   grid-area: contactZone;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  background-color: #fff;
 }
 
-#cvZone{
+#contactZone ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none;
+  width: 100%;
+}
+
+#contactZone ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+#contactZone span {
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  padding: 10px;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 0.3em;
+  z-index: 1;
+}
+
+#phone:hover span,
+#gmail:hover span,
+#linkedin:hover span,
+#github:hover span {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+}
+
+li:hover span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  transform: translateY(-50%) rotate(-45deg);
+  width: 15px;
+  height: 15px;
+  background-color: #fff;
+}
+
+#phone:hover span {
+  box-shadow: 0 -3px 3px #2ecc71;
+}
+
+#phone:hover span::before {
+  left: 16%;
+  box-shadow: 3px -3px 3px #2ecc71;
+}
+
+#gmail:hover span {
+  box-shadow: 0 -3px 3px #f00;
+}
+
+#gmail:hover span::before {
+  left: 38%;
+  box-shadow: 3px -3px 3px #f00;
+}
+
+#linkedin:hover span {
+  box-shadow: 0 -3px 3px #1b4f72;
+}
+
+#linkedin:hover span::before {
+  right: 38%;
+  box-shadow: 3px -3px 3px #1b4f72;
+}
+
+#github:hover span {
+  box-shadow: 0 -3px 3px #484747;
+}
+
+#github:hover span::before {
+  right: 16%;
+  box-shadow: 3px -3px 3px #484747;
+}
+
+.bx-phone {
+  color: #0f0;
+}
+
+.bxl-gmail {
+  color: #f00;
+}
+
+.bxl-linkedin {
+  color: #1b4f72;
+}
+
+.bxl-github {
+  color: #484747;
+}
+
+#cvZone {
   grid-area: cvZone;
   display: flex;
   flex-direction: column;
@@ -770,12 +883,15 @@ i {
   padding: 10px;
 }
 
-#cvZone h2, #cvZone a, #cvZone div{
+#cvZone h2,
+#cvZone a,
+#cvZone div {
   padding: 10px;
 }
 
-.bxs-download{
-  font-size: 10em;
+.bxs-download {
+  font-size: 4em;
+  color: #2ecc71;
 }
 
 #copyrightZone {
@@ -784,21 +900,19 @@ i {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  background-color: #484747;
   color: #fff;
 }
 
-#copyrightZone ul{
+#copyrightZone ul {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   list-style-type: none;
   text-align: center;
   font-weight: bold;
 }
 
-#copyrightZone ul li a{
+#copyrightZone ul li a {
   padding: 0 10px;
   text-decoration: none;
   color: #fff;
 }
-
