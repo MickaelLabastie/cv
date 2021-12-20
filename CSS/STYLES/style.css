@@ -824,10 +824,6 @@ li:hover span::before {
   background-color: #fff;
 }
 
-#gmail:hover{
-
-}
-
 #phone:hover span {
   box-shadow: -2px -3px 3px #2ecc71;
 }
