@@ -674,10 +674,6 @@ i {
   font-size: 1.2em;
 }
 
-.symphony {
-  border-radius: 50%;
-}
-
 .bxl-html5 {
   color: orangered;
 }
@@ -693,7 +689,7 @@ i {
 .bxl-sass {
   color: #cc75df;
 }
-
+ 
 .bxl-bootstrap {
   color: purple;
 }
@@ -704,6 +700,14 @@ i {
 
 .bxl-react {
   color: #3498db;
+}
+
+.bxl-visual-studio{
+  color: #3498db;
+}
+
+.symphony {
+  border-radius: 50%;
 }
 
 .progressBar {
@@ -795,7 +799,6 @@ i {
   visibility: hidden;
   opacity: 0;
   font-size: 0.3em;
-  z-index: 1;
 }
 
 #phone:hover span,
@@ -821,8 +824,12 @@ li:hover span::before {
   background-color: #fff;
 }
 
+#gmail:hover{
+
+}
+
 #phone:hover span {
-  box-shadow: 0 -3px 3px #2ecc71;
+  box-shadow: -2px -3px 3px #2ecc71;
 }
 
 #phone:hover span::before {
@@ -831,7 +838,7 @@ li:hover span::before {
 }
 
 #gmail:hover span {
-  box-shadow: 0 -3px 3px #f00;
+  box-shadow: -2px -3px 3px #f00;
 }
 
 #gmail:hover span::before {
@@ -840,7 +847,7 @@ li:hover span::before {
 }
 
 #linkedin:hover span {
-  box-shadow: 0 -3px 3px #1b4f72;
+  box-shadow: -2px -3px 3px #1b4f72;
 }
 
 #linkedin:hover span::before {
@@ -849,7 +856,7 @@ li:hover span::before {
 }
 
 #github:hover span {
-  box-shadow: 0 -3px 3px #484747;
+  box-shadow: -2px -3px 3px #484747;
 }
 
 #github:hover span::before {
@@ -891,7 +898,17 @@ li:hover span::before {
 
 .bxs-download {
   font-size: 4em;
+  color: #fff;
+  transition: all 0.3s linear;
+}
+
+.bxs-download:hover{
   color: #2ecc71;
+}
+
+.bxs-download:hover::before{
+  content: 'Téléchargez moi!!';
+  font-size: 0.5em;
 }
 
 #copyrightZone {
