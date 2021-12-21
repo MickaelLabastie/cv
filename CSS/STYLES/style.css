@@ -1121,7 +1121,7 @@ li:hover span::before {
   }
 }
 
-@media screen /*and (min-width: 768px)*/ and (max-width: 1080px) {
+@media screen and (min-width: 768px) and (max-width: 1080px) {
   body {
     padding-top: 75px;
   }
