@@ -206,6 +206,7 @@ article {
   height: 180px;
   border: 3px solid black;
   border-radius: 50%;
+  margin: 5px;
 }
 
 .half {
@@ -457,9 +458,9 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 90%;
+  width: 95%;
   height: 85vh;
-  margin: 5vh auto 0;
+  margin: 2vw auto 0;
   border-radius: 10px;
   box-shadow: 0 0 5px #000;
   background: url("../../ASSETS/Pictures/literature.jpg") no-repeat center /
@@ -689,7 +690,7 @@ i {
 .bxl-sass {
   color: #cc75df;
 }
- 
+
 .bxl-bootstrap {
   color: purple;
 }
@@ -702,7 +703,7 @@ i {
   color: #3498db;
 }
 
-.bxl-visual-studio{
+.bxl-visual-studio {
   color: #3498db;
 }
 
@@ -898,12 +899,12 @@ li:hover span::before {
   transition: all 0.3s linear;
 }
 
-.bxs-download:hover{
+.bxs-download:hover {
   color: #2ecc71;
 }
 
-.bxs-download:hover::before{
-  content: 'Téléchargez moi!!';
+.bxs-download:hover::before {
+  content: "Téléchargez moi!!";
   font-size: 0.5em;
 }
 
@@ -928,4 +929,127 @@ li:hover span::before {
   padding: 0 10px;
   text-decoration: none;
   color: #fff;
+}
+
+/************************************| MEDIA QUERIES |************************************/
+@media screen and (min-width: 1081px) and (max-width: 1350px) {
+  body {
+    padding-top: 92px;
+  }
+
+  .scrollTop {
+    scroll-margin-top: 92px;
+  }
+
+  #mainTitle {
+    font-size: 2.4em;
+  }
+
+  #subTitle00 {
+    font-size: 0.9em;
+  }
+
+  #navigation {
+    font-size: 0.7em;
+  }
+
+  #subTitle01 {
+    font-size: 1.3em;
+  }
+
+  #profileBckgnd {
+    font-size: 0.8em;
+  }
+
+  #subTitle02 {
+    font-size: 1.3em;
+  }
+
+  .half {
+    width: 60%;
+  }
+
+  .img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .subTitle {
+    font-size: 1.3em;
+  }
+
+  .timeline {
+    font-size: 0.8em;
+    width: 78%;
+  }
+
+  .timeline-item {
+    width: 40%;
+    margin: 0 5%;
+  }
+
+  .timeline-item:nth-child(2n + 1) .openBtn {
+    left: calc(45% - 10px);
+    transform: translate(-70%, -75%);
+  }
+
+  .timeline-item:nth-child(2n) .openBtn {
+    right: calc(5% + 10px);
+    transform: translate(-10%, -75%);
+  }
+
+  .detailsOn {
+    width: 70%;
+    height: 50%;
+  }
+
+  .closeBtn {
+    right: 20px;
+  }
+
+  .training {
+    font-size: 0.8em;
+  }
+
+  #skills {
+    height: 80vh;
+  }
+
+  .skillsList {
+    font-size: 0.8em;
+  }
+
+  .content {
+    width: 90%;
+    height: 30px;
+  }
+
+  .front {
+    width: 200px;
+    height: 200px;
+  }
+
+  .subFront {
+    width: 190px;
+    height: 190px;
+    transform: translateY(2.5%);
+  }
+
+  .progressBar {
+    border-width: 1.5px;
+  }
+
+  .inProgress {
+    background-image: repeating-linear-gradient(
+      45deg,
+      #1b4f72 0,
+      #1b4f72 5px,
+      #3498db 5px,
+      #3498db 10px
+    );
+  }
+
+  #contacts {
+    font-size: 0.8em;
+  }
 }
