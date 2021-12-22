@@ -70,7 +70,7 @@ header {
   height: 50px;
   border: 1px solid #fff;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, 0.2);
   cursor: pointer;
 }
 
@@ -94,7 +94,7 @@ header {
   background-color: #fff;
   box-shadow: 0 0 4px 1px #2ecc71;
   left: 0;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 
 .bar::before {
@@ -109,7 +109,7 @@ header {
   background-color: transparent;
   box-shadow: none;
   top: 0;
-  transition: all .5s linear;
+  transition: all 0.5s linear;
 }
 
 .bar.change::before {
@@ -126,7 +126,7 @@ header {
 
 /*******************| HEADER NAV |*******************/
 #navigation {
-  font-size: .8em;
+  font-size: 0.8em;
   padding: 5px 10px;
 }
 
@@ -149,7 +149,7 @@ header {
 
 .navLink:hover {
   color: white;
-  background-color: rgba(255, 255, 255, .2);
+  background-color: rgba(255, 255, 255, 0.2);
   border: 1px solid white;
   border-radius: 10px;
   box-shadow: 0 3px;
@@ -333,7 +333,7 @@ article {
   margin: 0 auto;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .timeline::before {
@@ -349,7 +349,7 @@ article {
   padding: 10px;
   border: 1px solid #fff;
   border-radius: 10px;
-  background-color: rgba(255, 255, 255, .1);
+  background-color: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0 3px white;
   margin: 0 10%;
   color: white;
@@ -360,13 +360,13 @@ article {
   text-shadow: 0 0 1px #0f0;
   box-shadow: 0 0 5px #ffa500;
   border-color: #ffa500;
-  transition: .5s linear;
+  transition: 0.5s linear;
 }
 
 .timeline-item:hover::before {
   background-color: #ffa500;
   box-shadow: 0 0 5px #ffa500;
-  transition: .5s linear;
+  transition: 0.5s linear;
 }
 
 .timeline-item::before {
@@ -413,7 +413,7 @@ article {
   padding: 10px;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: rgba(0, 0, 0, .8);
+  background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 0 5px #ffa500;
   backdrop-filter: blur(3px);
   color: #2ecc71;
@@ -422,7 +422,7 @@ article {
   border-radius: 10px;
   visibility: visible;
   opacity: 1;
-  transition: opacity .6s linear;
+  transition: opacity 0.6s linear;
 }
 
 .detailsOn h3,
@@ -563,7 +563,7 @@ article {
   box-shadow: 0 5px 5px#000;
   opacity: 0;
   visibility: hidden;
-  transition: all .8s linear;
+  transition: all 0.8s linear;
 }
 
 .training-item::after {
@@ -601,7 +601,7 @@ article {
 
 .thanks {
   text-align: center;
-  font-size: .8em;
+  font-size: 0.8em;
 }
 
 /*******************| ARTICLE #skills |*******************/
@@ -635,7 +635,7 @@ article {
   height: 100%;
   transform-style: preserve-3d;
   cursor: pointer;
-  transition: all .6s linear;
+  transition: all 0.6s linear;
 }
 
 .skillsFront,
@@ -793,7 +793,7 @@ i {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  font-size: .7em;
+  font-size: 0.7em;
   color: #fff;
   font-weight: bold;
   text-shadow: 0 0 5px #000;
@@ -866,7 +866,7 @@ i {
   padding: 10px;
   visibility: hidden;
   opacity: 0;
-  font-size: .3em;
+  font-size: 0.3em;
 }
 
 #phone:hover span,
@@ -882,7 +882,7 @@ i {
   background-color: #fff;
 }
 
-li:hover span::before {
+#contacts li:hover span::before {
   content: "";
   position: absolute;
   top: 0;
@@ -963,7 +963,7 @@ li:hover span::before {
 .bxs-download {
   font-size: 4em;
   color: #fff;
-  transition: all .3s linear;
+  transition: all 0.3s linear;
 }
 
 .bxs-download:hover {
@@ -972,7 +972,7 @@ li:hover span::before {
 
 .bxs-download:hover::before {
   content: "Téléchargez moi!!";
-  font-size: .5em;
+  font-size: 0.5em;
 }
 
 #copyrightZone {
@@ -1013,11 +1013,11 @@ li:hover span::before {
   }
 
   #subTitle00 {
-    font-size: .9em;
+    font-size: 0.9em;
   }
 
   #navigation {
-    font-size: .7em;
+    font-size: 0.7em;
   }
 
   #subTitle01 {
@@ -1025,7 +1025,7 @@ li:hover span::before {
   }
 
   #profileBckgnd {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   #subTitle02 {
@@ -1046,8 +1046,8 @@ li:hover span::before {
   }
 
   .timeline {
-    font-size: .8em;
     width: 78%;
+    font-size: 0.8em;
   }
 
   .timeline-item {
@@ -1075,7 +1075,7 @@ li:hover span::before {
   }
 
   .training {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   #skills {
@@ -1083,7 +1083,7 @@ li:hover span::before {
   }
 
   .skillsList {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   .content {
@@ -1117,7 +1117,7 @@ li:hover span::before {
   }
 
   #contacts {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
 
@@ -1135,7 +1135,7 @@ li:hover span::before {
   }
 
   #subTitle00 {
-    font-size: .9em;
+    font-size: 0.9em;
     padding: 1px;
   }
 
@@ -1150,7 +1150,7 @@ li:hover span::before {
 
   #navigation {
     position: absolute;
-    font-size: .7em;
+    font-size: 0.7em;
     top: 75px;
     right: 0;
     width: 18%;
@@ -1158,17 +1158,17 @@ li:hover span::before {
     margin-right: -100%;
     visibility: hidden;
     opacity: 0;
-    background-color: rgba(0, 0, 0, .7);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(5px);
     box-shadow: -1px 1px 3px #000;
-    transition: all .5s linear;
+    transition: all 0.5s linear;
   }
 
   #navigation.pop {
     margin-right: 0;
     visibility: visible;
     opacity: 1;
-    transition: all .5s linear;
+    transition: all 0.5s linear;
   }
 
   #navigation ul {
@@ -1180,23 +1180,27 @@ li:hover span::before {
 
   .navLink {
     color: white;
-    background-color: rgba(255, 255, 255, .2);
+    background-color: rgba(255, 255, 255, 0.2);
     border: 1px solid white;
     border-radius: 10px;
     box-shadow: 0 3px;
     font-weight: bold;
   }
 
+  article {
+    font-size: 0.8em;
+  }
+
   #subTitle01 {
     font-size: 1.3em;
   }
 
-#profile{
-  font-size: 0.8em;
-}
+  #profile {
+    font-size: 0.8em;
+  }
 
   #profileBckgnd {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 
   #subTitle02 {
@@ -1217,9 +1221,15 @@ li:hover span::before {
     font-size: 1.3em;
   }
 
+  #pro {
+    height: 65vh;
+  }
+
   .timeline {
-    font-size: .8em;
-    width: 78%;
+    width: 90%;
+    height: 85%;
+    font-size: 0.8em;
+    margin-top: 15px;
   }
 
   .timeline-item {
@@ -1239,39 +1249,79 @@ li:hover span::before {
 
   .detailsOn {
     width: 70%;
-    height: 50%;
+    height: 40%;
+  }
+
+  .openBtn,
+  .closeBtn {
+    width: 20px;
+    height: 20px;
+  }
+
+  .openBtn:hover::before,
+  .closeBtn:hover::before {
+    width: 28px;
+    height: 28px;
   }
 
   .closeBtn {
     right: 20px;
   }
 
+  #training {
+    height: 60vh;
+  }
+
   .training {
-    font-size: .8em;
+    font-size: 0.8em;
+    height: 50vh;
+    background-position: 0 25%;
   }
 
-  #skills {
-    height: 80vh;
+  .training-item {
+    height: 40px;
   }
 
-  .skillsList {
-    font-size: .8em;
-  }
-
-  .content {
-    width: 90%;
+  .training-item::after {
+    width: 30px;
     height: 30px;
   }
 
+  .change {
+    top: 5px;
+  }
+
+  #skills {
+    height: 50vh;
+  }
+
+  #skills h1 {
+    font-size: 1.3em;
+  }
+
+  .skillsContainer {
+    width: 25%;
+    height: 65%;
+  }
+
+  .skillsList {
+    font-size: 0.8em;
+  }
+
+  .content {
+    width: 85%;
+    height: 20px;
+  }
+
   .front {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
   }
 
   .subFront {
-    width: 190px;
-    height: 190px;
-    transform: translateY(2.5%);
+    width: 130px;
+    height: 130px;
+    transform: translateY(3.6%);
   }
 
   .progressBar {
@@ -1289,6 +1339,6 @@ li:hover span::before {
   }
 
   #contacts {
-    font-size: .8em;
+    font-size: 0.8em;
   }
 }
