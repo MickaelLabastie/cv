@@ -484,26 +484,41 @@
     height: 85%;
     font-size: 0.8em;
     margin-top: 15px;
+    align-items: unset;
   }
 
   .timeline-item {
-    width: 40%;
-    margin: 0 5%;
+    width: 88%;
+    margin: 0 6%;
   }
 
+  .timeline-item::before {
+    width: 15px;
+    height: 15px;
+    left: 11px;
+  }
+
+  .timeline-item:nth-child(2n), .timeline-item:nth-child(2n + 1) {
+    align-self: unset;
+  }
+
+  .timeline-item:nth-child(2n) .openBtn,
   .timeline-item:nth-child(2n + 1) .openBtn {
-    left: calc(45% - 10px);
-    transform: translate(-70%, -75%);
+    left: unset;
+    right: 6%;
+    transform: translate(-65%, -65%);
   }
 
-  .timeline-item:nth-child(2n) .openBtn {
-    right: calc(5% + 10px);
-    transform: translate(-10%, -75%);
+  .timeline-item ul li:nth-child(n+3){
+    display: none;
   }
 
   .detailsOn {
-    width: 70%;
-    height: 45%;
+    width: 80%;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
   }
 
   .openBtn,
@@ -523,7 +538,7 @@
   }
 
   #training {
-    height: 72vh;
+    height: 70vh;
   }
 
   .training {
@@ -532,13 +547,27 @@
     background-position: 0 25%;
   }
 
+  .training li:nth-child(odd),
+  .training li:nth-child(even){
+    align-self: unset;
+  }
+
   .training-item {
     height: 40px;
+    width: 95%;
   }
 
   .training-item::after {
-    width: 30px;
-    height: 30px;
+    top: -90%;
+    width: 25px;
+    height: 25px;
+  }
+
+  .training-item:nth-child(2n)::after,
+  .training-item:nth-child(2n+1)::after {
+    left: unset;
+    right: unset;
+    transform: unset;
   }
 
   .change {
@@ -546,7 +575,7 @@
   }
 
   #skills {
-    height: 60vh;
+    height: 100vh;
   }
 
   #skills h1 {
@@ -554,11 +583,15 @@
   }
 
   .skillsContainer {
-    width: 25%;
-    height: 65%;
+    width: 90%;
+    height: 30%;
+    perspective: 3000px;
   }
 
   .skillsList {
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 95%;
     font-size: 0.8em;
   }
 
@@ -592,6 +625,16 @@
     );
   }
 
+  #contacts {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 4fr);
+    grid-template-areas: 
+    "contactTitle" 
+    "contactZone" 
+    "cvZone" 
+    "copyrightZone";
+  }
+
   #contactZone {
     font-size: 2.3em;
   }
@@ -599,4 +642,9 @@
   footer div {
     font-size: 0.9em;
   }
+
+  #copyrightZone ul{
+    display: unset;
+  }
+
 }
