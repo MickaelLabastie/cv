@@ -480,8 +480,20 @@ article {
 }
 
 .closeBtn {
-  top: 10px;
-  right: 10px;
+  display: none;
+  position: fixed;
+  top: 20%;
+  right: 20%;
+  z-index: 1000;
+  width: 35px;
+  height: 35px;
+  transform: translate(100%,-100%);
+  font-size: 1.5em;
+}
+
+.closeBtn:hover{
+  color: #ffa500;
+  background-color: #000;
 }
 
 .timeline-item:nth-child(odd) .openBtn {
@@ -504,6 +516,12 @@ article {
   border: 3px solid transparent;
   border-top-color: #3498db;
   animation: load 1s linear infinite;
+}
+
+.closeBtn:hover::before{
+  width: 45px;
+  height: 45px;
+  border-top-color: #ffa500;
 }
 
 @keyframes load {
