@@ -14,8 +14,8 @@ html {
 }
 
 body {
-  font-family: "Quicksand", Verdana, Times, sans-serif;
-  padding-top: 98px;
+  font-family: "Roboto", Verdana, Times, sans-serif;
+  padding-top: 97px;
 }
 
 h1,
@@ -24,7 +24,7 @@ h2 {
 }
 
 .scrollTop {
-  scroll-margin-top: 98px;
+  scroll-margin-top: 97px;
 }
 
 .subTitle {
@@ -413,7 +413,7 @@ article {
   padding: 10px;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
   box-shadow: 0 0 5px #ffa500;
   backdrop-filter: blur(3px);
   color: #2ecc71;

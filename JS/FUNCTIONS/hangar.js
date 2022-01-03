@@ -19,16 +19,16 @@ The transition property whom apply to transform property is necessary to correct
 var pannelUp = ()=>{
     boxST01.style.top = '0';
     boxST01.style.transform = 'translate(-50%,0)';
-    boxST01.style.transition = 'top 6s ease-in-out, transform 6s ease-in-out';
+    boxST01.style.transition = 'top 3s ease-in-out, transform 3s ease-in-out';
     boxST01.style.pointerEvents = 'none';
-    setTimeout(startClick, 6000);
+    setTimeout(startClick, 3000);
 }
 
 var pannelDown = ()=>{
     boxST01.style.top = '50%';
     boxST01.style.transform = 'translate(-50%,-50%)';
     boxST01.style.pointerEvents = 'none';
-    setTimeout(startClick, 6000);
+    setTimeout(startClick, 3000);
 }
 
 /*
@@ -47,9 +47,9 @@ Centered inner doors and the two next doors are now aligned.
 */
 var openDoors01 = ()=>{
     door03.style.left = '16.666667%';
-    door03.style.transition = 'left 2s ease-in-out';
+    door03.style.transition = 'left 1s ease-in-out';
     door04.style.right = '16.666667%';
-    door04.style.transition = 'right 2s ease-in-out';
+    door04.style.transition = 'right 1s ease-in-out';
 }
 
 /*
@@ -59,13 +59,13 @@ All doors are now aligned.
 */
 var openDoors02 = ()=>{
     door03.style.left = '0';
-    door03.style.transition = 'left 2s ease-in-out';
+    door03.style.transition = 'left 1s ease-in-out';
     door04.style.right = '0';
-    door04.style.transition = 'right 2s ease-in-out';
+    door04.style.transition = 'right 1s ease-in-out';
     door02.style.left = '0';
-    door02.style.transition = 'left 2s ease-in-out';
+    door02.style.transition = 'left 1s ease-in-out';
     door05.style.right = '0';
-    door05.style.transition = 'right 2s ease-in-out';
+    door05.style.transition = 'right 1s ease-in-out';
 }
 
 /*
@@ -73,17 +73,17 @@ Last Step: All doors are open.It seems to be 'disappeared' from the viewport.
 */
 var openDoors03 = ()=>{
     door03.style.left = '-17%';
-    door03.style.transition = 'left 2s ease-in-out';
+    door03.style.transition = 'left 1s ease-in-out';
     door04.style.right = '-17%';
-    door04.style.transition = 'right 2s ease-in-out';
+    door04.style.transition = 'right 1s ease-in-out';
     door02.style.left = '-17%';
-    door02.style.transition = 'left 2s ease-in-out';
+    door02.style.transition = 'left 1s ease-in-out';
     door05.style.right = '-17%';
-    door05.style.transition = 'right 2s ease-in-out';
+    door05.style.transition = 'right 1s ease-in-out';
     door01.style.left = '-17%';
-    door01.style.transition = 'left 2s ease-in-out';
+    door01.style.transition = 'left 1s ease-in-out';
     door06.style.right = '-17%';
-    door06.style.transition = 'right 2s ease-in-out';
+    door06.style.transition = 'right 1s ease-in-out';
 }
 
 /*
@@ -92,35 +92,35 @@ Those functions make all the doors close.
 */
 var closeDoors01 = ()=>{
     door03.style.left = '0';
-    door03.style.transition = 'left 2s ease-in-out';
+    door03.style.transition = 'left 1s ease-in-out';
     door04.style.right = '0';
-    door04.style.transition = 'right 2s ease-in-out';
+    door04.style.transition = 'right 1s ease-in-out';
     door02.style.left = '0';
-    door02.style.transition = 'left 2s ease-in-out';
+    door02.style.transition = 'left 1s ease-in-out';
     door05.style.right = '0';
-    door05.style.transition = 'right 2s ease-in-out';
+    door05.style.transition = 'right 1s ease-in-out';
     door01.style.left = '0';
-    door01.style.transition = 'left 2s ease-in-out';
+    door01.style.transition = 'left 1s ease-in-out';
     door06.style.right = '0';
-    door06.style.transition = 'right 2s ease-in-out';
+    door06.style.transition = 'right 1s ease-in-out';
 }
 
 var closeDoors02 = ()=>{
     door03.style.left = '16.666667%';
-    door03.style.transition = 'left 2s ease-in-out';
+    door03.style.transition = 'left 1s ease-in-out';
     door04.style.right = '16.666667%';
-    door04.style.transition = 'right 2s ease-in-out';
+    door04.style.transition = 'right 1s ease-in-out';
     door02.style.left = '16.666667%';
-    door02.style.transition = 'left 2s ease-in-out';
+    door02.style.transition = 'left 1s ease-in-out';
     door05.style.right = '16.666667%';
-    door05.style.transition = 'right 2s ease-in-out';
+    door05.style.transition = 'right 1s ease-in-out';
 }
 
 var closeDoors03 = ()=>{
     door03.style.left = '33.333334%';
-    door03.style.transition = 'left 2s ease-in-out';
+    door03.style.transition = 'left 1s ease-in-out';
     door04.style.right = '33.333334%';
-    door04.style.transition = 'right 2s ease-in-out';
+    door04.style.transition = 'right 1s ease-in-out';
 }
 
 /*
@@ -158,9 +158,9 @@ var activateDoors = ()=>{
     if(interrupter === false){
         pannelUp();
         openDoors01();
-        setTimeout(openDoors02, 2000);
-        setTimeout(openDoors03, 4000);
-        setTimeout(disappear, 6000);
+        setTimeout(openDoors02, 1000);
+        setTimeout(openDoors03, 2000);
+        setTimeout(disappear, 3000);
     }else{
         pannelDown();
         appear();
@@ -170,8 +170,8 @@ var activateDoors = ()=>{
         Without this 1ms delay, appear() and closeDoors01() functions are called simultaneously, and there is no first closing of 2s effect on the doors
         */
         setTimeout(closeDoors01, 1);
-        setTimeout(closeDoors02, 2000);
-        setTimeout(closeDoors03, 4000);
+        setTimeout(closeDoors02, 1000);
+        setTimeout(closeDoors03, 2000);
     }
     interrupter = !interrupter;
 }
