@@ -1,4 +1,4 @@
-/*JS functions file for scrolling animation (CV Project)*/
+/*JS functions file for scrolling animation on training section (CV Project)*/
 
 /*Scrolling animation on ARTICLE#training element thanks to ScrolingMagic js library*/
 

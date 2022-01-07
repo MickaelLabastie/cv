@@ -162,16 +162,13 @@ header {
 }
 
 /************************************| MAIN |************************************/
-article {
-  height: 100vh;
-  width: 100%;
-}
+
 
 /*******************| ARTICLE #profile |*******************/
 #profile {
   position: relative;
   overflow-x: hidden;
-  height: auto;
+  scroll-margin-block: 97px;
 }
 
 #boxST01 {
@@ -318,8 +315,9 @@ article {
 }
 
 /*******************| ARTICLE #pro |*******************/
-#pro {
+#professional {
   background-image: linear-gradient(325deg, #3498db, #fff);
+  padding-block-end: 40px;
 }
 
 .timeline {
@@ -328,10 +326,9 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 75%;
-  height: 90vh;
+  width: 60%;
   margin: 0 auto;
-  padding: 10px;
+  padding-block: 50px;
   border-radius: 10px;
   background-color: rgba(0, 0, 0, 0.7);
 }
@@ -407,9 +404,9 @@ article {
   display: flex;
   flex-direction: column;
   z-index: 999;
-  width: 60%;
-  height: 60%;
-  top: 20%;
+  width: 50%;
+  height: 500px;
+  top: 200px;
   padding: 10px;
   overflow-y: auto;
   overflow-x: hidden;
@@ -482,9 +479,9 @@ article {
 .closeBtn {
   display: none;
   position: fixed;
-  top: 20%;
-  right: 20%;
-  z-index: 1000;
+  top: 200px;
+  right: 25%;
+  z-index: 999;
   width: 35px;
   height: 35px;
   transform: translate(100%,-100%);
@@ -497,21 +494,21 @@ article {
 }
 
 .timeline-item:nth-child(odd) .openBtn {
-  left: calc(40% - 10px);
-  transform: translate(-70%, -75%);
+  left: calc(40% + 10px);
+  transform: translate(-50%, 50%);
 }
 
 .timeline-item:nth-child(even) .openBtn {
-  right: calc(10% + 10px);
-  transform: translate(-10%, -75%);
+  right: calc(10% - 10px);
+  transform: translate(50%, 50%);
 }
 
 .openBtn:hover::before,
 .closeBtn:hover::before {
   content: "";
   position: absolute;
-  width: 32px;
-  height: 32px;
+  width: 35px;
+  height: 35px;
   border-radius: 50%;
   border: 3px solid transparent;
   border-top-color: #3498db;
@@ -543,13 +540,12 @@ article {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  width: 95%;
-  height: 85vh;
-  margin: 2vw auto 0;
+  width: 85%;
+  height: 750px;
+  margin: 20px auto 0;
   border-radius: 10px;
   box-shadow: 0 0 5px #000;
-  background: url("../../ASSETS/Pictures/literature.jpg") no-repeat center /
-    contain;
+  background: url("../../ASSETS/Pictures/literature.jpg") no-repeat center / 88%;
   background-color: #3498db;
   background-attachment: fixed;
 }
@@ -620,6 +616,7 @@ article {
 .thanks {
   text-align: center;
   font-size: 0.8em;
+  padding-block: 15px 30px;
 }
 
 /*******************| ARTICLE #skills |*******************/
@@ -627,6 +624,7 @@ article {
   color: #fff;
   background: url("../../ASSETS/Pictures/dev_web.webp") no-repeat center/ cover;
   background-attachment: fixed;
+  height: 850px;
 }
 
 .skillsList {
