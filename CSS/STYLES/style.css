@@ -583,10 +583,9 @@ header {
 .training-item::after {
   content: "";
   position: absolute;
-  top: 0;
   width: 50px;
   height: 50px;
-  background: url("../../ASSETS/Icons/hat_school.png") no-repeat center / cover;
+  background: url("../../ASSETS/Icons/hat_school.png") no-repeat center / 80%;
   background-color: #fff;
   border: 3px solid #000;
   border-radius: 5px;
@@ -595,12 +594,12 @@ header {
 
 .training-item:nth-child(odd)::after {
   right: 0;
-  transform: translate(80%, -80%);
+  transform: translate(110%,0);
 }
 
 .training-item:nth-child(even)::after {
   left: 0;
-  transform: translate(-80%, -80%);
+  transform: translate(-110%,0);
 }
 
 .training-item span {

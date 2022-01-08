@@ -1,13 +1,13 @@
 /************************************| MEDIA QUERIES |************************************/
 
-/*******************| SCREENS BETWEEN 1081px and 1366px |*******************/
-@media screen and (min-width: 1081px) and (max-width: 1366px) {
+/*******************| SCREENS BETWEEN 1080px and 1600px |*******************/
+@media screen and (min-width: 1080px) and (max-width: 1600px) {
   body {
-    padding-top: 92px;
+    padding-top: 91px;
   }
 
   .scrollTop {
-    scroll-margin-top: 92px;
+    scroll-margin-top: 91px;
   }
 
   #mainTitle {
@@ -27,7 +27,7 @@
   }
 
   #profileBckgnd {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   #subTitle02 {
@@ -35,7 +35,7 @@
   }
 
   .half {
-    width: 60%;
+    width: 75%;
   }
 
   .img {
@@ -48,46 +48,43 @@
   }
 
   .timeline {
-    width: 78%;
-    font-size: 0.8em;
+    width: 80%;
+    font-size: 0.9em;
   }
-
+  
   .timeline-item {
-    width: 40%;
-    margin: 0 5%;
+    width: 35%;
+    margin: 0 7.5%;
   }
-
+  
   .timeline-item:nth-child(2n + 1) .openBtn {
-    left: calc(45% - 10px);
-    transform: translate(-70%, -75%);
+    left: calc(42.5% + 10px);
   }
-
+  
   .timeline-item:nth-child(2n) .openBtn {
-    right: calc(5% + 10px);
-    transform: translate(-10%, -75%);
+    right: calc(7.5% - 10px);
   }
-
+  
   .detailsOn {
     width: 70%;
-    height: 50%;
   }
-
+  
   .closeBtn {
-    right: 20px;
+    right: 15%;
   }
 
   .training {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   #skills {
-    height: 80vh;
+    height: 650px;
   }
-
+  
   .skillsList {
     font-size: 0.8em;
   }
-
+  
   .content {
     width: 90%;
     height: 30px;
@@ -103,7 +100,7 @@
     height: 190px;
     transform: translateY(2.5%);
   }
-
+  
   .progressBar {
     border-width: 1.5px;
   }
@@ -123,8 +120,8 @@
   }
 }
 
-/*******************| SCREENS BETWEEN 768px and 1080px |*******************/
-@media screen and (min-width: 768px) and (max-width: 1080px) {
+/*******************| SCREENS BETWEEN 760px and 1079px |*******************/
+@media screen and (min-width: 760px) and (max-width: 1079px) {
   body {
     padding-top: 75px;
   }
@@ -172,7 +169,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    height: 40%;
+  }
+
+  #navigation ul li{
+    margin-block: 15px;
   }
 
   .navLink {
@@ -189,7 +189,7 @@
   }
 
   #profileBckgnd {
-    font-size: 0.8em;
+    font-size: 0.9em;
   }
 
   #subTitle02 {
@@ -202,100 +202,68 @@
   }
 
   .img {
-    width: 120px;
-    height: 120px;
+    width: 135px;
+    height: 135px;
   }
 
   .subTitle {
     font-size: 1.3em;
   }
 
-  #pro {
-    height: 80vh;
-  }
 
   .timeline {
     width: 90%;
-    height: 85%;
-    font-size: 0.8em;
-    margin-top: 15px;
+    font-size: 0.9em;
   }
 
   .timeline-item {
-    width: 40%;
-    margin: 0 5%;
+    width: 35%;
+    margin: 0 7.5%;
   }
-
+  
   .timeline-item:nth-child(2n + 1) .openBtn {
-    left: calc(45% - 10px);
-    transform: translate(-70%, -75%);
+    left: calc(42.5% + 10px);
   }
-
+  
   .timeline-item:nth-child(2n) .openBtn {
-    right: calc(5% + 10px);
-    transform: translate(-10%, -75%);
+    right: calc(7.5% - 10px);
   }
 
   .detailsOn {
     width: 70%;
-    height: 45%;
   }
-
-  .openBtn,
+  
   .closeBtn {
-    width: 20px;
-    height: 20px;
-  }
-
-  .openBtn:hover::before,
-  .closeBtn:hover::before {
-    width: 28px;
-    height: 28px;
-  }
-
-  .closeBtn {
-    right: 20px;
-  }
-
-  #training {
-    height: 72vh;
+    right: 15%;
   }
 
   .training {
+    width: 90%;
+    height: 650px;
     font-size: 0.8em;
-    height: 60vh;
-    background-position: 0 25%;
+    background-size: 95%;
   }
 
-  .training-item {
-    height: 40px;
-  }
-
-  .training-item::after {
-    width: 30px;
-    height: 30px;
-  }
-
-  .change {
-    top: 5px;
+  .training-item{
+    width: 60%;
   }
 
   #skills {
-    height: 60vh;
+    height: 550px;
   }
 
-  #skills h1 {
-    font-size: 1.3em;
+  #skills h1{
+    font-size: 1.2em;
   }
-
-  .skillsContainer {
-    width: 25%;
-    height: 65%;
-  }
-
+  
   .skillsList {
-    font-size: 0.8em;
+    height: 80%;
+    font-size: 0.7em;
   }
+  
+.skillsContainer{
+  perspective: 5000px;
+}
 
   .content {
     width: 85%;
@@ -312,7 +280,7 @@
     height: 130px;
     transform: translateY(3.6%);
   }
-
+  
   .progressBar {
     border-width: 1.5px;
   }
@@ -328,32 +296,33 @@
   }
 
   #contactZone {
-    font-size: 2.3em;
+    font-size: 2.2em;
   }
 
   footer div {
-    font-size: 0.9em;
-  }
+      font-size: 0.9em;
+  } 
+
 }
 
 
 /*******************| SCREENS BETWEEN 0px and 767px |*******************/
 @media screen and (max-width: 767px) {
+
   body {
-    padding-top: 69px;
+    padding-top: 70px;
   }
 
   .scrollTop {
-    scroll-margin-top: 69px;
+    scroll-margin-top: 70px;
   }
 
   #mainTitle {
-    font-size: 2.4em;
+    font-size: 2.1em;
   }
 
   header {
     padding: 5px;
-    font-size: 0.9em;
   }
 
   .burger {
@@ -381,10 +350,10 @@
   #navigation {
     position: absolute;
     font-size: 0.7em;
-    top: 69px;
+    top: 70px;
     right: 0;
-    height: 100vh;
     width: 100%;
+    height: 100vh;
     margin-right: -100%;
     visibility: hidden;
     opacity: 0;
@@ -405,7 +374,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
-    height: 60%;
+  }
+
+  #navigation ul li{
+    margin-block: 15px;
   }
 
   .navLink {
@@ -462,8 +434,14 @@
     display: none;
   }
 
+  #subTitle02 {
+    font-size: 1.3em;
+    top: 25%;
+  }
+
   .half {
     width: 100%;
+    padding: 5px;
   }
 
   .img {
@@ -475,105 +453,161 @@
     font-size: 1.3em;
   }
 
-  #pro {
-    height: 80vh;
-  }
 
   .timeline {
-    width: 90%;
-    height: 85%;
-    font-size: 0.8em;
-    margin-top: 15px;
     align-items: unset;
+    width: 90%;
+    padding-block: 10px;
+    font-size: 0.8em;
   }
 
-  .timeline-item {
-    width: 88%;
-    margin: 0 6%;
+  .timeline::before{
+    left: 5%;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item{
+    width: 80%;
+    margin-block: 10px;
   }
 
   .timeline-item::before {
     width: 15px;
     height: 15px;
-    left: 11px;
-  }
-
-  .timeline-item:nth-child(2n), .timeline-item:nth-child(2n + 1) {
-    align-self: unset;
-  }
-
-  .timeline-item:nth-child(2n) .openBtn,
-  .timeline-item:nth-child(2n + 1) .openBtn {
-    left: unset;
-    right: 6%;
-    transform: translate(-65%, -65%);
-  }
+    left: 5%;
+    transform: translateX(-50%);
+}
 
   .timeline-item ul li:nth-child(n+3){
     display: none;
   }
 
   .detailsOn {
-    width: 80%;
-    height: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    width: 90%;
+    top: 150px;
+    height: 350px;
   }
-
-  .openBtn,
-  .closeBtn {
-    width: 20px;
-    height: 20px;
-  }
-
-  .openBtn:hover::before,
-  .closeBtn:hover::before {
-    width: 28px;
-    height: 28px;
+  
+  .timeline-item:nth-child(odd) .openBtn,
+  .timeline-item:nth-child(even) .openBtn
+  {
+    left: unset;
+    right: 5%;
+    transform: translate(-100%, -100%);
   }
 
   .closeBtn {
-    right: 20px;
-  }
-
-  #training {
-    height: 70vh;
-  }
-
-  .training {
-    font-size: 0.8em;
-    height: 60vh;
-    background-position: 0 25%;
-  }
-
-  .training li:nth-child(odd),
-  .training li:nth-child(even){
-    align-self: unset;
-  }
-
-  .training-item {
-    height: 40px;
-    width: 95%;
-  }
-
-  .training-item::after {
-    top: -90%;
+    top: 150px;
+    right: 5%;
+    transform: translate(-25%, 25%);
     width: 25px;
     height: 25px;
   }
 
-  .training-item:nth-child(2n)::after,
-  .training-item:nth-child(2n+1)::after {
-    left: unset;
-    right: unset;
-    transform: unset;
+  .closeBtn:hover::before{
+    width: 35px;
+    height: 35px;
   }
 
-  .change {
+  .training {
+    width: 90%;
+    height: 500px;
+    font-size: 0.8em;
+    background-size: 95%;
+  }
+
+  .training-item{
+    width: 90%;
+    margin: 0 auto;
+    height: 35px;
+  }
+
+  .training-item::after {
+    width: 35px;
+    height: 35px;
+  }
+
+  .training-item:nth-child(odd)::after,
+  .training-item:nth-child(even)::after{
+    right: unset;
+    left: 50%;
+    transform: translate(-50%, -110%);
+  }
+
+  .change{
     top: 5px;
   }
 
+  #skills {
+    height: 550px;
+  }
+
+  #skills h1{
+    font-size: 1.2em;
+  }
+  
+  .skillsList {
+    height: 80%;
+    font-size: 0.7em;
+  }
+  
+.skillsContainer{
+  perspective: 5000px;
+}
+
+  .content {
+    width: 85%;
+    height: 20px;
+  }
+
+  .front {
+    width: 140px;
+    height: 140px;
+  }
+
+  .subFront {
+    width: 130px;
+    height: 130px;
+    transform: translateY(3.6%);
+  }
+  
+  .progressBar {
+    border-width: 1.5px;
+  }
+
+  .inProgress {
+    background-image: repeating-linear-gradient(
+      45deg,
+      #1b4f72 0,
+      #1b4f72 5px,
+      #3498db 5px,
+      #3498db 10px
+    );
+  }
+
+  #contacts {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr repeat(3, 4fr);
+    grid-template-areas: 
+    "contactTitle" 
+    "contactZone" 
+    "cvZone" 
+    "copyrightZone";
+  }
+
+  #contactZone {
+    font-size: 2.2em;
+  }
+
+  footer div {
+    font-size: 0.9em;
+  }
+
+  #copyrightZone ul{
+    display: unset;
+  }
+
+/*
   #skills {
     height: 100vh;
   }
@@ -645,6 +679,6 @@
 
   #copyrightZone ul{
     display: unset;
-  }
+  } */
 
 }
