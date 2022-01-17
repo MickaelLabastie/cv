@@ -1,0 +1,96 @@
+/*Fichier CSS pour cv.html*/
+
+/*Permet lors de l'impression de la page de modifié les paramètres des marges*/
+@page{
+	margin: 5px;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	font-family: icomoon;
+}
+
+/*******************Paramètres de la 1ère boîte*******************/
+.box01{
+	border-radius: 20px;
+	width: 30%;
+	color: white;
+	background: linear-gradient(045deg, rgba(0,0,0,100) 0%, rgba(71,71,75,100) 50%, rgba(108,108,108,100) 100%);
+	display: flex;
+	flex-direction: column;
+}
+
+.photo{
+	border: solid 2px steelblue;
+	border-radius: 50%;
+	width: 180px;
+	height: 180px;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	background: white top / 80% no-repeat url("../../ASSETS/Pictures/photocv.png");
+}
+
+h2{
+	border-bottom: solid 2px steelblue;
+	font-size: 20px;
+}
+
+.box01>h2{
+	margin: 0 5%;
+}
+
+.box01>ul{
+	list-style-type: none;
+}
+
+.formation>li{
+	font-weight: bold;
+	font-style: italic;;
+	color: steelblue;
+	list-style-type: square;
+}
+
+.formation>span{
+	display: inline-block;
+}
+
+.interest{
+	padding: 5px;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+/*******************Paramètres de la 2nde boîte*******************/
+.box02{
+	width: 70%;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+}
+
+.box02>h1{
+	font-size: 60px;
+	text-align: center;
+	background: steelblue;
+	color: white;
+}
+
+.box02>span{
+	text-align: center;
+	font-size: 25px;
+}
+
+.box02 :nth-child(6)>span{
+	color: steelblue;
+	font-weight: bold;
+}
+
+.box02 :nth-child(6)>ul>li{
+	list-style-type: square;
+}
