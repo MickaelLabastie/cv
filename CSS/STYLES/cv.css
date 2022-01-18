@@ -1,11 +1,11 @@
 /*CSS for cv.html file (CV Project)*/
 
 /************************************| GENERAL STYLE |************************************/
-
 *, *::before, *::after{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Ubuntu', 'icomoon';
 }
 
 .container{
@@ -13,7 +13,20 @@
 	flex-direction: row;
 	justify-content: center;
 	align-items: center;
-	font-family: icomoon;
+	background-color: #fff;
+}
+
+.subBox{
+	width: 90%;
+	margin: 0 auto;
+}
+
+.list{
+	padding: 10px 10px 10px 0;
+}
+
+.list li{
+	padding: 5px 5px 5px 0;
 }
 
 /*******************Paramètres de la 1ère boîte*******************/
@@ -21,38 +34,35 @@
 	display: flex;
 	flex-direction: column;
 	width: 30%;
-	border-radius: 20px;
 	color: white;
+	background-color: #484747;
 }
 
 .photo{
-	border: solid 2px steelblue;
+	width: 160px;
+	height: 160px;
+	margin: 20px auto;
+	background: #fff top / 80% no-repeat url("../../ASSETS/Pictures/photocv.png");
+	border: 3px solid #1b4f72;
 	border-radius: 50%;
-	width: 180px;
-	height: 180px;
-	margin: auto;
-	margin-top: 25px;
-	margin-bottom: 25px;
-	background: white top / 80% no-repeat url("../../ASSETS/Pictures/photocv.png");
 }
 
-h2{
-	border-bottom: solid 2px steelblue;
-	font-size: 20px;
+.box01 h2{
+	padding-block-end: 2px;
+	margin: 0 auto;
+	font-size: 1.2em;
+	color: #fff;
+	border-bottom: 1px solid #fff;
 }
 
-.box01>h2{
-	margin: 0 5%;
-}
-
-.box01>ul{
+.box01 ul{
 	list-style-type: none;
 }
 
-.formation>li{
+.formation > li{
 	font-weight: bold;
 	font-style: italic;;
-	color: steelblue;
+	color: #002b87;
 	list-style-type: square;
 }
 
@@ -64,7 +74,7 @@ h2{
 	padding: 5px;
 	display: flex;
 	justify-content: space-evenly;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 /*******************Paramètres de la 2nde boîte*******************/
@@ -80,7 +90,7 @@ h2{
 .box02>h1{
 	font-size: 60px;
 	text-align: center;
-	background: steelblue;
+	background: #1b4f72;
 	color: white;
 }
 

@@ -10,81 +10,76 @@
   font-display: block;
 }
 
-[class^="icon-"], [class*=" icon-"]{
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+[class*="icon-"]::before{
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+  font-size: 1.3em;
+	color: #1b4f72;
+	background-color: #fff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	margin-inline-end: 10px;
 }
 
-[class*="icon-"]:before{
-  display: inline-block;
-  margin: 0 10px 10px 0;
-}
-
-.icon-music:before {
+.icon-music::before {
   content: "\e911";
 }
-.icon-film:before {
+.icon-film::before {
   content: "\e913";
 }
-.icon-book:before {
+.icon-book::before {
   content: "\e91f";
 }
-.icon-phone:before {
+.icon-phone::before {
   content: "\e942";
 }
-.icon-envelop:before {
+.icon-envelop::before {
   content: "\e945";
 }
-.icon-location:before {
+.icon-location::before {
   content: "\e947";
 }
-.icon-location2:before {
+.icon-location2::before {
   content: "\e948";
 }
-.icon-mobile:before {
+.icon-mobile::before {
   content: "\e958";
 }
-.icon-accessibility:before {
+.icon-accessibility::before {
   content: "\e9b2";
 }
-.icon-mail:before {
+.icon-mail::before {
   content: "\ea83";
 }
-.icon-mail2:before {
+.icon-mail2::before {
   content: "\ea84";
 }
-.icon-mail3:before {
+.icon-mail3::before {
   content: "\ea85";
 }
-.icon-mail4:before {
+.icon-mail4::before {
   content: "\ea86";
 }
-.icon-steam:before {
+.icon-steam::before {
   content: "\eaac";
 }
-.icon-steam2:before {
+.icon-steam2::before {
   content: "\eaad";
 }
-.icon-file-word:before {
+.icon-file-word::before {
   content: "\eae1";
 }
-.icon-file-excel:before {
+.icon-file-excel::before {
   content: "\eae2";
 }
-.icon-html-five:before {
+.icon-html-five::before {
   content: "\eae4";
 }
-.icon-html-five2:before {
+.icon-html-five2::before {
   content: "\eae5";
 }
-.icon-css3:before {
+.icon-css3::before {
   content: "\eae6";
 }
