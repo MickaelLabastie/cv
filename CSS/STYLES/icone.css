@@ -11,15 +11,8 @@
 }
 
 [class*="icon-"]::before{
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-  font-size: 1.3em;
-	color: #1b4f72;
-	background-color: #fff;
-	width: 30px;
-	height: 30px;
-	border-radius: 50%;
+  font-size: 1.4em;
+	color: #3498db;
 	margin-inline-end: 10px;
 }
 
@@ -46,9 +39,6 @@
 }
 .icon-mobile::before {
   content: "\e958";
-}
-.icon-accessibility::before {
-  content: "\e9b2";
 }
 .icon-mail::before {
   content: "\ea83";
