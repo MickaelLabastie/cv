@@ -68,7 +68,6 @@
 }
 
 .interest{
-	padding: 5px;
 	display: flex;
 	flex-direction: column;
 }
@@ -151,8 +150,54 @@
 	padding-block-start: 30px;
 }
 
-.military > div {
+.military h3, .civilian h3, .military h4, .civilian h4{
+	position: relative;
+}
+
+.military h3::before, .civilian h3::before{
+	content: '';
+	position: absolute;
+	left: -25px;
+	transform: translate(-50%,-25%);
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 2px solid #3498db;
+}
+
+.military h3::before{
+	background: url('../../ASSETS/Pictures/mn.png') no-repeat center / 70%;
+}
+
+.civilian h3::before{
+	background: url('../../ASSETS/Pictures/stokomani.svg') no-repeat center / contain;
+}
+
+.military h4::before, .civilian h4::before{
+	content: '';
+	position: absolute;
+	left: -25px;
+	transform: translateX(-50%);
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px solid #484747;
+	background: url('../../ASSETS/Icons/anchor.png') no-repeat center / cover, #484747;
+}
+
+.military > div, .civilian > div {
 	padding-block: 10px;
+	position: relative;
+}
+
+.military > div::before, .civilian > div::before {
+	content: '';
+	position: absolute;
+	left: -25px;
+	transform: translateX(-50%);
+	width: 2px;
+	height: 100%;
+	background-color: #484747;
 }
 
 .military > div:last-child {
@@ -168,27 +213,5 @@
 	list-style-position: inside;
 }
 
-.military h3, .civilian h3{
-	position: relative;
-}
 
-.military h3::before, .civilian h3::before{
-	content: '';
-	position: absolute;
-	left: -45px;
-	transform: translateY(-25%);
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	border: 2px solid #3498db;
-}
-
-.military h3::before{
-	background: url('../../ASSETS/Pictures/mn.png') no-repeat center / 70%;
-}
-
-.civilian h3::before{
-	background: url('../../ASSETS/Pictures/stokomani.svg') no-repeat center / contain;
-}
-
-
+/*<a href="https://www.flaticon.com/free-icons/anchor" title="anchor icons">Anchor icons created by Freepik - Flaticon</a>*/
