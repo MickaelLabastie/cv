@@ -16,18 +16,6 @@
 	background-color: #fff;
 }
 
-.subBox{
-	width: 90%;
-}
-
-.list{
-	padding: 20px 0;
-}
-
-.list li{
-	padding: 5px 0;
-}
-
 /************************************| MAIN ASIDE.box01 |************************************/
 .box01{
 	grid-area: aside;
@@ -66,6 +54,18 @@
 	color: #3498db;
 }
 
+.subBox{
+	width: 90%;
+}
+
+.list{
+	padding: 20px 0;
+}
+
+.list li{
+	padding: 5px 0;
+}
+
 .interest{
 	display: flex;
 	flex-direction: column;
@@ -98,6 +98,7 @@
 	color: #3498db;
 }
 
+/*******************| DIV .title |*******************/
 .title{
 	grid-area: title;
 	position: relative;
@@ -132,6 +133,8 @@
 	background-color: #3498db;
 }
 
+
+/*******************| DIV .profile |*******************/
 .profile{
 	grid-area: profile;
 }
@@ -213,8 +216,17 @@
 	list-style-position: inside;
 }
 
+.military div:nth-child(3) ul li:first-child,
+.military div:nth-child(4) ul li:first-child{
+	list-style-type: none;
+	font-weight: bolder;
+	font-style: italic;
+}
+
 /************************************| MEDIA QUERIES |************************************/
 
+
+/*******************| @MEDIA PRINT |*******************/
 @page{
 	margin: 0;
 	size: A4 portrait;
@@ -291,6 +303,8 @@
 
 }
 
+
+/*******************| @MEDIA SCREEN |*******************/
 @media screen and (min-width: 950px) and (max-width: 1320px){
 
 	.box02{
