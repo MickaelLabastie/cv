@@ -1,418 +1,238 @@
-/*CSS for cv.html file (CV Project)*/
+/*CSS for index.html file (CV Project)*/
 
 /************************************| GENERAL STYLE |************************************/
-*, *::before, *::after{
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: 'Ubuntu', 'icomoon';
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", "icomoon";
 }
 
-.container{
-	display: grid;
-	grid-template-columns: 1fr 3fr;
-	grid-template-rows: 1fr;
-	grid-template-areas: 'aside section';
-	background-color: #fff;
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "aside section";
+  background-color: #fff;
 }
 
 /************************************| MAIN ASIDE.box01 |************************************/
-.box01{
-	grid-area: aside;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	color: white;
-	background-color: #484747;
+.box01 {
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  background-color: #484747;
 }
 
-.photo{
-	width: 160px;
-	height: 160px;
-	margin-block: 20px;
-	background: #fff top / 80% no-repeat url("../../ASSETS/Pictures/photocv.png");
-	border: 3px solid #3498db;
-	border-radius: 50%;
+.photo {
+  width: 160px;
+  height: 160px;
+  margin-block: 20px;
+  background: #fff top / 80% no-repeat url("../../ASSETS/Pictures/photocv.png");
+  border: 3px solid #3498db;
+  border-radius: 50%;
 }
 
-.box01 h2{
-	font-size: 1.2em;
-	color: #fff;
-	border-bottom: 1px solid #fff;
+.box01 h2 {
+  font-size: 1.2em;
+  color: #fff;
+  border-bottom: 1px solid #fff;
 }
 
-.box01 ul{
-	list-style-type: none;
+.box01 ul {
+  list-style-type: none;
 }
 
 .trng > li:nth-child(2),
 .trng > li:nth-child(4),
 .trng > li:nth-child(6),
-.trng > li:nth-child(9){
-	font-weight: bold;
-	font-style: italic;
-	color: #3498db;
+.trng > li:nth-child(9) {
+  font-weight: bold;
+  font-style: italic;
+  color: #3498db;
 }
 
-.subBox{
-	width: 90%;
+.subBox {
+  width: 90%;
 }
 
-.list{
-	padding: 20px 0;
+.list {
+  padding: 20px 0;
 }
 
-.list li{
-	padding: 5px 0;
+.list li {
+  padding: 5px 0;
 }
 
-.interest{
-	display: flex;
-	flex-direction: column;
+.interest {
+  display: flex;
+  flex-direction: column;
 }
 
 /************************************| MAIN SECTION.box02 |************************************/
-.box02{
-	grid-area: section;
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 200px 120px 1fr;
-	grid-template-areas:
-		'title'
-		'profile'
-		'professional';
-	row-gap: 20px;
+.box02 {
+  grid-area: section;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 200px 120px 1fr;
+  grid-template-areas:
+    "title"
+    "profile"
+    "professional";
+  row-gap: 20px;
 }
 
-.box02 h2{
-	margin-block-end: 10px;
-	color: #3498db;
-	border-bottom: 1px solid #3498db;
+.box02 h2 {
+  margin-block-end: 10px;
+  color: #3498db;
+  border-bottom: 1px solid #3498db;
 }
 
-.box02 h3{
-	padding-block-end: 10px;
+.box02 h3 {
+  padding-block-end: 10px;
 }
 
-.box02 h4{
-	color: #3498db;
+.box02 h4 {
+  color: #3498db;
 }
 
 /*******************| DIV .title |*******************/
-.title{
-	grid-area: title;
-	position: relative;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-	background: #3498db;
-	color: white;
+.title {
+  grid-area: title;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: #3498db;
+  color: white;
 }
 
-.title h1{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 75%;
-	height: 100px;
-	font-size: 3.5em;
-	border: 2px solid #fff;
+.title h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  height: 100px;
+  font-size: 3.5em;
+  border: 2px solid #fff;
 }
 
-.title span{
-	position: absolute;
-	bottom: 50px;
-	transform: translateY(50%);
-	width: 50%;
-	padding: 5px;
-	border: 2px solid transparent;
-	border-left: 2px solid #fff;
-	border-right: 2px solid #fff;
-	border-radius: 10px;
-	background-color: #3498db;
+.title span {
+  position: absolute;
+  bottom: 50px;
+  transform: translateY(50%);
+  width: 50%;
+  padding: 5px;
+  border: 2px solid transparent;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #fff;
+  border-radius: 10px;
+  background-color: #3498db;
 }
-
 
 /*******************| DIV .profile |*******************/
-.profile{
-	grid-area: profile;
+.profile {
+  grid-area: profile;
 }
 
-.professional{
-	grid-area: professional;
+.professional {
+  grid-area: professional;
 }
 
-.profile, .professional{
-	padding: 0 10px;
+.profile,
+.professional {
+  padding: 0 10px;
 }
 
-.military, .civilian{
-	padding-inline-start: 50px;
-	padding-block-start: 30px;
+.military,
+.civilian {
+  padding-inline-start: 50px;
+  padding-block-start: 30px;
 }
 
-.military h3, .civilian h3, .military h4, .civilian h4{
-	position: relative;
+.military h3,
+.civilian h3,
+.military h4,
+.civilian h4 {
+  position: relative;
 }
 
-.military h3::before, .civilian h3::before{
-	content: '';
-	position: absolute;
-	left: -25px;
-	transform: translate(-50%,-25%);
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	border: 2px solid #3498db;
+.military h3::before,
+.civilian h3::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  transform: translate(-50%, -25%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #3498db;
 }
 
-.military h3::before{
-	background: url('../../ASSETS/Pictures/mn.png') no-repeat center / 70%;
+.military h3::before {
+  background: url("../../ASSETS/Pictures/mn.png") no-repeat center / 70%;
 }
 
-.civilian h3::before{
-	background: url('../../ASSETS/Pictures/stokomani.svg') no-repeat center / contain;
+.civilian h3::before {
+  background: url("../../ASSETS/Pictures/stokomani.svg") no-repeat center /
+    contain;
 }
 
-.military h4::before, .civilian h4::before{
-	content: '';
-	position: absolute;
-	left: -25px;
-	transform: translateX(-50%);
-	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	border: 2px solid #484747;
-	background: url('../../ASSETS/Icons/anchor.png') no-repeat center / cover, #484747;
+.military h4::before,
+.civilian h4::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #484747;
+  background: url("../../ASSETS/Icons/anchor.png") no-repeat center / cover,
+    #484747;
 }
 
-.military > div, .civilian > div {
-	padding-block: 10px;
-	position: relative;
+.military > div,
+.civilian > div {
+  padding-block: 10px;
+  position: relative;
 }
 
-.military > div::before, .civilian > div::before {
-	content: '';
-	position: absolute;
-	top: 30%;
-	left: -25px;
-	transform: translateX(-50%);
-	width: 2px;
-	height: 50%;
-	background-color: #484747;
+.military > div::before,
+.civilian > div::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -25px;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 50%;
+  background-color: #484747;
 }
 
 .military > div:last-child {
-	padding-block-end: unset;
+  padding-block-end: unset;
 }
 
-.military p:nth-child(3), .civilian p:nth-child(3){
-	padding-block: 10px;
-	font-style: italic;
+.military p:nth-child(3),
+.civilian p:nth-child(3) {
+  padding-block: 10px;
+  font-style: italic;
 }
 
-.military li, .civilian li{
-	list-style-position: inside;
+.military li,
+.civilian li {
+  list-style-position: inside;
 }
 
 .military div:nth-child(3) ul li:first-child,
-.military div:nth-child(4) ul li:first-child{
-	list-style-type: none;
-	font-weight: bolder;
-	font-style: italic;
-}
-
-/************************************| MEDIA QUERIES |************************************/
-
-
-/*******************| @MEDIA PRINT |*******************/
-@page{
-	margin: 0;
-	size: A4 portrait;
-}
-
-@media print{
-
-	.box01 h2{
-		font-size: 0.8em;
-	}
-
-	.photo{
-		width: 110px;
-		height: 110px;
-		margin-block: 10px;
-	}
-
-	.list{
-		padding: 10px 0;
-		font-size: 0.65em;
-	}
-
-	[class*="icon-"]::before{
-		font-size: 0.6em;
-	}
-
-	.box02{
-		grid-template-rows: 110px 85px 1fr;
-		row-gap: 12.2px;
-	}
-
-	.box02 h2 {
-		margin-block-end: 6px;
-	}
-
-	.title h1{
-		font-size: 2.3em;
-		width: 80%;
-		height: 80px;
-	}
-
-	.title span{
-		bottom: 20px;
-		width: 65%;
-		padding: 2px;
-		font-size: 0.7em;
-	}
-
-	.profile, .professional{
-		font-size: 0.65em;
-	}
-
-	.military, .civilian{
-		padding-block-start: 15px;
-	}
-
-	.military > div, .civilian > div{
-		padding-block: 8px;
-	}
-
-	.military h3::before, .civilian h3::before{
-		width: 35px;
-		height: 35px;
-	}
-
-	.military h4::before, .civilian h4::before{
-		width: 15px;
-		height: 15px;
-	}
-
-	.military p:nth-child(3), .civilian p:nth-child(3){
-		padding-block: 5px;
-	}
-
-}
-
-
-/*******************| @MEDIA SCREEN |*******************/
-@media screen and (min-width: 950px) and (max-width: 1320px){
-
-	.box02{
-		grid-template-rows: 200px 160px 1fr;
-	}
-
-	.icon-envelop{
-		word-wrap: break-word;
-	}
-
-}
-
-@media screen and (min-width: 768px) and (max-width: 949px){
-
-	.box01 h2{
-		font-size: 1.1em;
-	}
-
-	.photo{
-		width: 140px;
-		height: 140px;
-	}
-
-	.list{
-		font-size: 0.9em;
-	}
-
-	[class*="icon-"]::before{
-		font-size: 1.2em;
-	}
-
-	.box02{
-		grid-template-rows: 200px 160px 1fr;
-	}
-
-	.title h1{
-		font-size: 3em;
-		width: 80%;
-	}
-
-	.title span{
-		width: 65%;
-		font-size: 0.9em;
-	}
-
-	.icon-envelop{
-		word-wrap: break-word;
-	}
-
-	.profile, .professional{
-		font-size: 0.9em;
-	}
-
-}
-
-@media screen and (max-width: 767px){
-
-	.container{
-		grid-template-columns: 1fr;
-		grid-template-rows: 110px repeat(2, auto);
-		grid-template-areas:
-			'.'
-			'section'
-			'aside'
-		;
-	}
-
-	.box01{
-		padding-block-start: 10px;
-	}
-
-	.box01 h2{
-		font-size: 1em;
-	}
-
-	.list{
-		padding: 10px 0;
-		font-size: 0.8em;
-	}
-
-	.photo{
-		position: absolute;
-		top: 0;
-		width: 100px;
-		height: 100px;
-		margin-block: 5px;
-	}
-
-	.box02{
-		grid-template-columns: 1fr;
-		grid-template-rows: 110px auto 1fr;
-		row-gap: 10px;
-	}
-
-	.title h1{
-		font-size: 1.5em;
-		height: 60px;
-		width: 80%;
-	}
-
-	.title span{
-		bottom: 25px;
-		width: 65%;
-		font-size: 0.6em;
-	}
-
-	.profile, .professional{
-		font-size: 0.8em;
-	}
-
+.military div:nth-child(4) ul li:first-child {
+  list-style-type: none;
+  font-weight: bolder;
+  font-style: italic;
 }

@@ -1,5 +1,6 @@
-/*MAIN CSS file(CV Project)*/
+/*MAIN CSS file for index.html (CV Project)*/
 
-@import url('./STYLES/font.css');
-@import url('./STYLES/style.css');
-@import url('./STYLES/queries.css');
+@import url("./STYLES/cv.css");
+@import url("./STYLES/font.css");
+@import url("./STYLES/icone.css");
+@import url("./STYLES/queries.css");

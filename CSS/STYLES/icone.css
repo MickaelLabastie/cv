@@ -1,19 +1,22 @@
+/*CSS for index.html file (CV Project)*/
+
 @font-face {
-  font-family: 'icomoon';
-  src:  url('../../ASSETS/Fonts/IcoMoon/icomoon.eot?cgoks4');
-  src:  url('../../ASSETS/Fonts/IcoMoon/icomoon.eot?cgoks4#iefix') format('embedded-opentype'),
-        url('../../ASSETS/Fonts/IcoMoon/icomoon.ttf?cgoks4') format('truetype'),
-        url('../../ASSETS/Fonts/IcoMoon/icomoon.woff?cgoks4') format('woff'),
-        url('../../ASSETS/Fonts/IcoMoon/icomoon.svg?cgoks4#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("../../ASSETS/Fonts/IcoMoon/icomoon.eot?cgoks4");
+  src: url("../../ASSETS/Fonts/IcoMoon/icomoon.eot?cgoks4#iefix")
+      format("embedded-opentype"),
+    url("../../ASSETS/Fonts/IcoMoon/icomoon.ttf?cgoks4") format("truetype"),
+    url("../../ASSETS/Fonts/IcoMoon/icomoon.woff?cgoks4") format("woff"),
+    url("../../ASSETS/Fonts/IcoMoon/icomoon.svg?cgoks4#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-[class*="icon-"]::before{
+[class*="icon-"]::before {
   font-size: 1.4em;
-	color: #3498db;
-	margin-inline-end: 10px;
+  color: #3498db;
+  margin-inline-end: 10px;
 }
 
 .icon-music::before {
